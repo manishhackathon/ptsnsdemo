@@ -75,19 +75,19 @@ const Header = () => {
             <div className="flex shrink-0 items-center gap-1">
               <Button
                 variant="outline"
-                className="h-9 w-9 rounded-md border-primary bg-gray-100 p-0 text-muted-foreground shadow-lg hover:bg-gray-200"
+                className="h-9 w-9 rounded-lg border-primary bg-gray-100 p-0 text-muted-foreground shadow-lg hover:bg-gray-200"
               >
                 <span className="text-sm">A-</span>
               </Button>
               <Button
                 variant="outline"
-                className="h-9 w-9 rounded-md border-primary bg-gray-100 p-0 text-muted-foreground shadow-lg hover:bg-gray-200"
+                className="h-9 w-9 rounded-lg border-primary bg-gray-100 p-0 text-muted-foreground shadow-lg hover:bg-gray-200"
               >
                 <span className="text-sm">A</span>
               </Button>
               <Button
                 variant="outline"
-                className="h-9 w-9 rounded-md border-primary bg-gray-100 p-0 text-muted-foreground shadow-lg hover:bg-gray-200"
+                className="h-9 w-9 rounded-lg border-primary bg-gray-100 p-0 text-muted-foreground shadow-lg hover:bg-gray-200"
               >
                 <span className="text-sm">A+</span>
               </Button>
