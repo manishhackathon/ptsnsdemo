@@ -30,7 +30,7 @@ const Header = () => {
         </div>
 
         <div className="order-1 flex flex-1 justify-center md:order-2">
-          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+          <div className="flex flex-col items-center gap-4 md:flex-row md:items-center">
             {centerLogo && (
               <Link href="/">
                 <div className="relative h-[80px] w-[80px] overflow-hidden rounded-full border-4 border-primary shadow-lg md:h-[90px] md:w-[90px]">
@@ -46,7 +46,7 @@ const Header = () => {
             )}
             <div>
               <Link href="/">
-                <h1 className="font-headline text-2xl font-bold tracking-tight text-primary md:text-3xl">
+                <h1 className="text-center font-headline text-2xl font-bold tracking-tight text-primary md:text-left md:text-3xl">
                   Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                 </h1>
               </Link>
