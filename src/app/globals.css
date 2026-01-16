@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 200 100% 50%;
+    --radius: 0.75rem;
 
     --background-left: 350 100% 98%;
     --background-right: 350 100% 98%;
@@ -79,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
     --ring: 200 100% 60%;
+    --radius: 0.75rem;
 
     --background-left: 350 20% 12%;
     --background-right: 350 20% 12%;
