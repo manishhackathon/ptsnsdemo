@@ -42,13 +42,13 @@ h1, h2, h3, h4, h5, h6 {
 
     --background-left: 350 100% 98%;
     --background-right: 350 100% 98%;
-    --vector-fill-left: 0 80% 50%;
-    --vector-fill-right: 0 80% 50%;
-    --vector-stroke-left: 0 80% 50%;
-    --vector-stroke-right: 0 80% 50%;
+    --vector-fill-left: 0 80% 40%;
+    --vector-fill-right: 0 80% 40%;
+    --vector-stroke-left: 0 80% 40%;
+    --vector-stroke-right: 0 80% 40%;
 
-    --header-bg-left: 200 100% 50%;
-    --header-bg-right: 200 100% 50%;
+    --header-bg-left: 196 90% 55%;
+    --header-bg-right: 196 90% 55%;
   }
 
   .dark {
@@ -87,8 +87,8 @@ h1, h2, h3, h4, h5, h6 {
     --vector-stroke-left: 0 80% 50%;
     --vector-stroke-right: 0 80% 50%;
 
-    --header-bg-left: 200 100% 50%;
-    --header-bg-right: 200 100% 50%;
+    --header-bg-left: 196 90% 55%;
+    --header-bg-right: 196 90% 55%;
   }
 }
 
