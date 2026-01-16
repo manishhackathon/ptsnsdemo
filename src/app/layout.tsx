@@ -6,9 +6,6 @@ import Footer from '@/components/layout/footer';
 import NavBar from '@/components/layout/navbar';
 import NewsTicker from '@/components/layout/news-ticker';
 import Chatbot from '@/components/chatbot';
-import { Button } from '@/components/ui/button';
-import { FileSearch } from 'lucide-react';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)',
@@ -42,15 +39,6 @@ export default function RootLayout({
           <Footer />
         </div>
         <Toaster />
-        <Button
-          asChild
-          className="fixed bottom-6 left-6 z-50 h-16 w-16 rounded-full bg-accent text-accent-foreground shadow-lg transition-transform hover:scale-110"
-          aria-label="File Tracking Access"
-        >
-          <Link href="#">
-            <FileSearch className="h-8 w-8" />
-          </Link>
-        </Button>
         <Chatbot />
       </body>
     </html>
