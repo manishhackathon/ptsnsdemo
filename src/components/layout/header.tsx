@@ -55,18 +55,40 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="mt-3 w-full max-w-xs sm:mt-4 sm:max-w-sm md:max-w-md">
-          <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
-            <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <Input
-              placeholder="Search courses, notices, faculty..."
-              className="h-9 w-full rounded-full border-0 bg-white pl-10 pr-10 text-xs transition-colors focus-visible:outline-none focus-visible:ring-0 sm:h-10"
-            />
+        <div className="mt-3 flex w-full max-w-lg items-center justify-center gap-2 px-2 sm:mt-4">
+          <div className="relative flex-grow">
+            <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
+              <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                placeholder="Search courses, notices, faculty..."
+                className="h-9 w-full rounded-full border-0 bg-white pl-10 pr-10 text-xs transition-colors focus-visible:outline-none focus-visible:ring-0 sm:h-10"
+              />
+              <Button
+                size="icon"
+                className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 rounded-full bg-gradient-to-r from-accent to-primary text-white transition-opacity hover:opacity-90 sm:h-8 sm:w-8"
+              >
+                <Search className="h-4 w-4" />
+              </Button>
+            </div>
+          </div>
+          <div className="flex shrink-0 items-center gap-1">
             <Button
-              size="icon"
-              className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 rounded-full bg-gradient-to-r from-accent to-primary text-white transition-opacity hover:opacity-90 sm:h-8 sm:w-8"
+              variant="outline"
+              className="h-9 w-9 rounded-md border-primary bg-white p-0 text-muted-foreground shadow-lg hover:bg-gray-100 sm:h-10 sm:w-10"
             >
-              <Search className="h-4 w-4" />
+              <span className="text-xs">A-</span>
+            </Button>
+            <Button
+              variant="outline"
+              className="h-9 w-9 rounded-md border-primary bg-white p-0 text-muted-foreground shadow-lg hover:bg-gray-100 sm:h-10 sm:w-10"
+            >
+              <span className="text-sm">A</span>
+            </Button>
+            <Button
+              variant="outline"
+              className="h-9 w-9 rounded-md border-primary bg-white p-0 text-muted-foreground shadow-lg hover:bg-gray-100 sm:h-10 sm:w-10"
+            >
+              <span className="text-base font-bold">A+</span>
             </Button>
           </div>
         </div>
