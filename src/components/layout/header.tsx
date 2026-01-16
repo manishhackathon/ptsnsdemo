@@ -13,17 +13,6 @@ const Header = () => {
       <HeaderBackground />
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
-          <Link href="/" className="hidden xl:block">
-            <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl md:h-32 md:w-32 xl:h-64 xl:w-64">
-              <Image
-                src="/haldipic.png"
-                alt="Haldi Pic"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </Link>
-
           <div className="rounded-2xl border border-accent/50 bg-white/70 px-4 py-2 shadow-xl backdrop-blur-sm sm:px-6">
             <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
               <Link href="/">
@@ -65,9 +54,6 @@ const Header = () => {
               </a>
             </div>
           </div>
-
-          <div className="hidden xl:block w-64"></div>
-
         </div>
         <div className="mt-3 w-full max-w-xs sm:mt-4 sm:max-w-sm md:max-w-md">
           <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
