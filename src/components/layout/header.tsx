@@ -1,6 +1,6 @@
 'use client';
 
-import { Search } from 'lucide-react';
+import { Phone, Mail, Search } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -34,7 +34,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="flex min-w-0 flex-1 flex-col items-center text-center">
+        <div className="flex min-w-0 flex-1 flex-col items-center pt-2 text-center">
           <div className="flex items-start justify-center gap-4">
             {centerLogo && (
               <Link href="/">
@@ -58,10 +58,27 @@ const Header = () => {
                   पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                 </p>
               </Link>
+              <div className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-foreground/80">
+                <a
+                  href="tel:07652240917"
+                  className="flex items-center gap-2 transition-colors hover:text-primary"
+                >
+                  <Phone className="h-4 w-4 text-accent" />
+                  <span>Phone: 07652-240917</span>
+                </a>
+                <div className="hidden h-4 w-px bg-border sm:block" />
+                <a
+                  href="mailto:ptsnsuniversity@gmail.com"
+                  className="flex items-center gap-2 transition-colors hover:text-primary"
+                >
+                  <Mail className="h-4 w-4 text-accent" />
+                  <span>Email: ptsnsuniversity@gmail.com</span>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div className="mt-6 w-full max-w-xl">
+          <div className="mt-4 w-full max-w-xl">
             <div className="relative rounded-full bg-white shadow-2xl shadow-primary/20">
               <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
               <Input
