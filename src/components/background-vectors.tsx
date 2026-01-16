@@ -37,14 +37,14 @@ const vectors = [
   { Icon: BookIcon, style: { top: '40%', left: '4%', width: '60px', height: '60px', transform: 'rotate(15deg)' } },
   { Icon: MilletIcon, style: { top: '65%', left: '1%', width: '90px', height: '90px', transform: 'rotate(-10deg)' } },
   { Icon: TurmericIcon, style: { top: '85%', left: '3%', width: '50px', height: '50px', transform: 'rotate(25deg)' } },
-  { Icon: BookIcon, style: { top: '5%', left: '5%', width: '40px', height: '40px', transform: 'rotate(-5deg)' } },
+  { Icon: BookIcon, style: { top: '5%', left: '1%', width: '40px', height: '40px', transform: 'rotate(-5deg)' } },
 
   // Right Side
   { Icon: DegreeCapIcon, style: { top: '20%', right: '2%', width: '90px', height: '90px', transform: 'rotate(15deg)' } },
   { Icon: BookIcon, style: { top: '50%', right: '4%', width: '70px', height: '70px', transform: 'rotate(-12deg)' } },
   { Icon: MilletIcon, style: { top: '75%', right: '1%', width: '80px', height: '80px', transform: 'rotate(20deg)' } },
-  { Icon: TurmericIcon, style: { top: '90%', right: '5%', width: '60px', height: '60px', transform: 'rotate(-15deg)' } },
-  { Icon: DegreeCapIcon, style: { top: '8%', right: '6%', width: '50px', height: '50px', transform: 'rotate(5deg)' } },
+  { Icon: TurmericIcon, style: { top: '90%', right: '3%', width: '60px', height: '60px', transform: 'rotate(-15deg)' } },
+  { Icon: DegreeCapIcon, style: { top: '8%', right: '1.5%', width: '50px', height: '50px', transform: 'rotate(5deg)' } },
 ];
 
 const BackgroundVectors = () => {
