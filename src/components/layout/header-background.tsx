@@ -1,7 +1,7 @@
 const HeaderBackground = () => {
   return (
     <div
-      className="absolute inset-0 bg-[#1E90FF]"
+      className="absolute inset-0 bg-[#00BFFF]"
       aria-hidden="true"
     />
   );
