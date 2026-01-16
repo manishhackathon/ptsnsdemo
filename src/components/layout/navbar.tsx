@@ -75,7 +75,7 @@ const navLinks = [
 
 
 const NavMenu = () => (
-  <nav className="hidden items-center space-x-1 md:flex">
+  <nav className="hidden items-center space-x-1 lg:flex">
     {navLinks.map((link) => (
       link.subLinks ? (
         <DropdownMenu key={link.label}>
@@ -112,7 +112,7 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10 hover:text-primary-foreground">
@@ -162,7 +162,7 @@ const MobileNav = () => {
 const NavBar = () => {
     return (
         <div className="sticky top-0 z-40 w-full bg-gradient-to-r from-primary to-accent">
-            <div className="container mx-auto flex h-14 items-center justify-end px-4 md:justify-center">
+            <div className="container mx-auto flex h-14 items-center justify-end px-4 lg:justify-center">
                 <NavMenu />
                 <MobileNav />
             </div>
