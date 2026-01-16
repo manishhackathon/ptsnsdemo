@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 210 100% 50%;
+    --primary: 200 100% 50%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 210 100% 94%;
@@ -38,17 +38,17 @@ h1, h2, h3, h4, h5, h6 {
     
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 210 100% 50%;
+    --ring: 200 100% 50%;
 
-    --background-left: 0 100% 95%;
-    --background-right: 0 100% 95%;
-    --vector-fill-left: 0 70% 40%;
-    --vector-fill-right: 0 70% 40%;
-    --vector-stroke-left: 0 70% 40%;
-    --vector-stroke-right: 0 70% 40%;
+    --background-left: 350 100% 98%;
+    --background-right: 350 100% 98%;
+    --vector-fill-left: 0 80% 50%;
+    --vector-fill-right: 0 80% 50%;
+    --vector-stroke-left: 0 80% 50%;
+    --vector-stroke-right: 0 80% 50%;
 
-    --header-bg-left: 200 90% 60%;
-    --header-bg-right: 200 90% 60%;
+    --header-bg-left: 200 100% 50%;
+    --header-bg-right: 200 100% 50%;
   }
 
   .dark {
@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 210 100% 60%;
+    --primary: 200 100% 60%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 240 3.7% 15.9%;
@@ -78,17 +78,17 @@ h1, h2, h3, h4, h5, h6 {
 
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 210 100% 60%;
+    --ring: 200 100% 60%;
 
-    --background-left: 0 20% 12%;
-    --background-right: 0 20% 12%;
-    --vector-fill-left: 0 70% 40%;
-    --vector-fill-right: 0 70% 40%;
-    --vector-stroke-left: 0 70% 40%;
-    --vector-stroke-right: 0 70% 40%;
+    --background-left: 350 20% 12%;
+    --background-right: 350 20% 12%;
+    --vector-fill-left: 0 80% 50%;
+    --vector-fill-right: 0 80% 50%;
+    --vector-stroke-left: 0 80% 50%;
+    --vector-stroke-right: 0 80% 50%;
 
-    --header-bg-left: 200 40% 30%;
-    --header-bg-right: 200 40% 30%;
+    --header-bg-left: 200 100% 50%;
+    --header-bg-right: 200 100% 50%;
   }
 }
 

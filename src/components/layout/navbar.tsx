@@ -170,7 +170,7 @@ const MobileNav = () => {
 
 const NavBar = () => {
     return (
-        <div className="sticky top-0 z-40 w-full border-b border-primary/20 bg-white">
+        <div className="sticky top-0 z-40 w-full border-b border-primary bg-white">
             <div className="container mx-auto flex h-14 items-center justify-end px-4 xl:justify-center">
                 <NavMenu />
                 <MobileNav />
