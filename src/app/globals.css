@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer base {
   :root {
-    --background: 206 62% 71%;
+    --background: 208 65% 71%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -99,11 +99,6 @@ h1, h2, h3, h4, h5, h6 {
     @apply border-border;
   }
   body {
-    background-image: url('/body.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    @apply text-foreground;
+    @apply bg-background text-foreground;
   }
 }

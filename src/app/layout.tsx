@@ -24,6 +24,12 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
+        <div
+          className="fixed inset-0 z-0 bg-cover bg-center brightness-90 opacity-80"
+          style={{
+            backgroundImage: "url('/body.png')",
+          }}
+        />
         <div className="relative z-10 mx-auto flex min-h-screen max-w-[90%] flex-col border border-accent/50 bg-card shadow-2xl">
           <Header />
           <NewsTicker />
