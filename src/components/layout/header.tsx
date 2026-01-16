@@ -33,7 +33,7 @@ const Header = () => {
           <div className="flex flex-col items-center gap-4 text-center md:flex-row md:items-center">
             {centerLogo && (
               <Link href="/">
-                <div className="relative h-[80px] w-[80px] shrink-0 overflow-hidden rounded-full border-4 border-primary shadow-lg md:h-[90px] md:w-[90px]">
+                <div className="relative h-[80px] w-[80px] shrink-0 overflow-hidden rounded-full shadow-lg md:h-[90px] md:w-[90px]">
                   <Image
                     src={centerLogo.imageUrl}
                     alt={centerLogo.description}
