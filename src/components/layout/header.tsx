@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className="w-full bg-card">
-      <div className="flex items-center justify-between gap-4 px-4 py-6">
+      <div className="flex items-start justify-between gap-4 px-4 pt-2 pb-6">
         <div className="flex flex-col items-center gap-2 text-center">
           {leftLogo && (
             <Link href="#">
