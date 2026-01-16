@@ -12,8 +12,8 @@ const newsItems = [
 const NewsTicker = () => {
   return (
     <div className="group flex h-10 items-center overflow-hidden border-t border-b border-border/50 bg-muted/50">
-      <div className="flex h-full flex-shrink-0 items-center gap-2 border-r border-border/50 bg-muted px-4 text-primary">
-        <Megaphone className="h-5 w-5" />
+      <div className="flex h-full flex-shrink-0 items-center gap-2 border-r border-border/50 bg-muted px-4 text-destructive">
+        <Megaphone className="h-6 w-6" />
         <span className="font-headline text-sm font-semibold whitespace-nowrap">News & Updates</span>
       </div>
       <div className="relative flex-1 overflow-hidden">
