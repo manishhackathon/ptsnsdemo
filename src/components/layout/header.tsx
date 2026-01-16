@@ -15,7 +15,7 @@ const Header = () => {
         <div className="flex flex-col items-center gap-2 text-center">
           {leftLogo && (
             <Link href="#">
-              <div className="relative h-[70px] w-[70px] overflow-hidden rounded-lg shadow-lg shadow-primary/10 md:h-[90px] md:w-[90px]">
+              <div className="relative h-[90px] w-[90px] overflow-hidden rounded-lg shadow-lg shadow-primary/10 md:h-[120px] md:w-[120px]">
                 <Image
                   src={leftLogo.imageUrl}
                   alt={leftLogo.description}
@@ -62,7 +62,7 @@ const Header = () => {
         <div className="flex flex-col items-center gap-2 text-center">
           {rightLogo && (
             <Link href="#">
-              <div className="relative h-[70px] w-[70px] overflow-hidden rounded-lg shadow-lg shadow-primary/10 md:h-[90px] md:w-[90px]">
+              <div className="relative h-[90px] w-[90px] overflow-hidden rounded-lg shadow-lg shadow-primary/10 md:h-[120px] md:w-[120px]">
                 <Image
                   src={rightLogo.imageUrl}
                   alt={rightLogo.description}
