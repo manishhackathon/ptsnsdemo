@@ -25,9 +25,9 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <div
-          className="fixed inset-0 z-0 bg-cover bg-center brightness-75 opacity-60"
+          className="fixed inset-0 z-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/body.png')",
+            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/body.png')",
           }}
         />
         <div className="relative z-10 mx-auto flex min-h-screen max-w-[90%] flex-col border border-accent/50 bg-card shadow-2xl">
