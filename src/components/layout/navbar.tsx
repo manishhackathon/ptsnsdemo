@@ -83,7 +83,7 @@ const NavMenu = () => (
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
-              className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-white/10 hover:text-primary-foreground"
+              className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-sky-700 transition-colors hover:bg-sky-50 hover:text-sky-900"
             >
               {link.label} <ChevronDown className="h-4 w-4" />
             </Button>
@@ -100,7 +100,7 @@ const NavMenu = () => (
         <Link
           key={link.label}
           href={link.href || '#'}
-          className="px-3 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-white/10 rounded-md"
+          className="rounded-md px-3 py-2 text-sm font-medium text-sky-700 transition-colors hover:bg-sky-50 hover:text-sky-900"
         >
           {link.label}
         </Link>
@@ -116,7 +116,7 @@ const MobileNav = () => {
     <div className="xl:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-white/10 hover:text-primary-foreground">
+          <Button variant="ghost" size="icon" className="text-sky-700 hover:bg-sky-50 hover:text-sky-900">
             <Menu className="h-6 w-6" />
             <span className="sr-only">Open navigation menu</span>
           </Button>
@@ -170,7 +170,7 @@ const MobileNav = () => {
 
 const NavBar = () => {
     return (
-        <div className="sticky top-0 z-40 w-full bg-gradient-to-r from-primary to-accent">
+        <div className="sticky top-0 z-40 w-full border-b bg-white">
             <div className="container mx-auto flex h-14 items-center justify-end px-4 xl:justify-center">
                 <NavMenu />
                 <MobileNav />
