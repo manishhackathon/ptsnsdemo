@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className="w-full bg-card">
       <div className="flex items-center justify-between gap-4 px-4 pt-4 pb-6">
-        <div className="flex w-1/4 justify-start">
+        <div className="flex w-1/6 justify-start">
           <div className="flex flex-col items-center gap-2 text-center">
             {leftLogo && (
               <Link href="#">
@@ -34,7 +34,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="flex w-1/2 flex-1 flex-col items-center text-center">
+        <div className="mt-2 flex w-2/3 flex-1 flex-col items-center text-center">
           <div className="flex items-center justify-center gap-4">
             {centerLogo && (
               <Link href="/">
@@ -78,7 +78,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="flex w-1/4 justify-end">
+        <div className="flex w-1/6 justify-end">
           <div className="flex flex-col items-center gap-2 text-center">
             {rightLogo && (
               <Link href="#">
