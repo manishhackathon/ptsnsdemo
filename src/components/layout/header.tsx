@@ -5,16 +5,22 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [imageSrc, setImageSrc] = useState('/header.png');
+
+  useEffect(() => {
+    setImageSrc(`/header.png?_=${new Date().getTime()}`);
+  }, []);
+
   return (
     <header className="relative w-full overflow-hidden">
       <Image
-        src="/header.png"
+        src={imageSrc}
         alt="Header collage of Turmeric farmers, Millet Production, a tiger, and tribal heritage."
         fill
         className="object-cover"
-        priority
       />
       <div className="absolute inset-0 bg-black/20" />
       <div className="relative z-10 flex min-w-0 flex-1 flex-col items-center p-4 pb-6 text-center">
