@@ -23,8 +23,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
-        <div className="relative flex min-h-screen flex-col">
-          <BackgroundVectors />
+        <BackgroundVectors />
+        <div className="relative mx-auto flex min-h-screen w-full max-w-[85%] flex-col bg-background shadow-2xl">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

@@ -1,7 +1,7 @@
 const BackgroundVectors = () => {
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-[-1] h-full w-full overflow-hidden bg-background"
+      className="pointer-events-none fixed inset-0 z-[-1] h-full w-full overflow-hidden"
       aria-hidden="true"
     >
       <svg className="h-full w-full">

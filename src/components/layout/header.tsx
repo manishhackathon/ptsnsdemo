@@ -96,7 +96,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
-      <div className="container mx-auto flex h-20 max-w-[95%] items-center justify-between px-4">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4">
         {leftLogo && (
           <Link href="/" className="hidden lg:block">
             <Image

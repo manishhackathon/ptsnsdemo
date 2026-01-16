@@ -6,7 +6,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-primary/5 border-t border-primary/10 text-foreground">
-      <div className="container mx-auto max-w-[85%] px-4 py-8">
+      <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">
             <h3 className="font-headline text-lg font-semibold text-primary">Rewa Royals University</h3>
