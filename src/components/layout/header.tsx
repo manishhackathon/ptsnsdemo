@@ -41,7 +41,7 @@ const Header = () => {
       )}
 
       <div className="relative z-10 flex min-w-0 flex-1 flex-col items-center p-4 pb-6 text-center">
-        <div className="rounded-full bg-white/95 px-6 py-4 shadow-xl backdrop-blur-sm sm:px-10 sm:py-6">
+        <div className="rounded-3xl bg-white/95 px-6 py-4 shadow-xl backdrop-blur-sm sm:px-10 sm:py-6 md:rounded-[50%/50%]">
           <div className="flex flex-col items-center justify-center gap-1 sm:gap-2 md:flex-row md:items-start md:gap-4">
             {centerLogo && (
               <Link href="/">
