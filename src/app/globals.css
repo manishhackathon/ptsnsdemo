@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer base {
   :root {
-    --background: 270 100% 98%;
+    --background: 210 100% 98%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -21,11 +21,11 @@ h1, h2, h3, h4, h5, h6 {
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 270 70% 50%;
+    --primary: 210 100% 50%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 270 70% 94%;
-    --secondary-foreground: 270 70% 40%;
+    --secondary: 210 100% 94%;
+    --secondary-foreground: 210 100% 40%;
 
     --muted: 240 5% 96%;
     --muted-foreground: 240 5% 45.1%;
@@ -38,15 +38,15 @@ h1, h2, h3, h4, h5, h6 {
     
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
-    --ring: 270 70% 50%;
+    --ring: 210 100% 50%;
 
     --radius: 0.5rem;
 
-    --background-left: 270 100% 95%;
+    --background-left: 210 100% 95%;
     --background-right: 340 100% 95%;
-    --vector-fill-left: 270 100% 92%;
+    --vector-fill-left: 210 100% 92%;
     --vector-fill-right: 340 100% 92%;
-    --vector-stroke-left: 270 90% 88%;
+    --vector-stroke-left: 210 90% 88%;
     --vector-stroke-right: 340 90% 88%;
   }
 
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 270 70% 60%;
+    --primary: 210 100% 60%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 240 3.7% 15.9%;
@@ -77,13 +77,13 @@ h1, h2, h3, h4, h5, h6 {
 
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 270 70% 60%;
+    --ring: 210 100% 60%;
 
-    --background-left: 270 20% 12%;
+    --background-left: 210 20% 12%;
     --background-right: 340 20% 12%;
-    --vector-fill-left: 270 20% 15%;
+    --vector-fill-left: 210 20% 15%;
     --vector-fill-right: 340 20% 15%;
-    --vector-stroke-left: 270 30% 20%;
+    --vector-stroke-left: 210 30% 20%;
     --vector-stroke-right: 340 30% 20%;
   }
 }
