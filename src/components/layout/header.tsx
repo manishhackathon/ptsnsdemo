@@ -58,10 +58,10 @@ const Header = () => {
             )}
             <div className="text-center">
               <Link href="/">
-                <h1 className="font-headline text-lg font-bold tracking-tight text-primary sm:text-xl xl:text-3xl">
+                <h1 className="font-headline text-lg font-bold tracking-tight text-[#0080FE] sm:text-xl xl:text-3xl">
                   Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                 </h1>
-                <p className="mt-1 font-hindi text-base font-bold text-primary sm:text-lg xl:text-2xl">
+                <p className="mt-1 font-hindi text-base font-bold text-[#0080FE] sm:text-lg xl:text-2xl">
                   पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                 </p>
               </Link>
