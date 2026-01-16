@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 
 const Header = () => {
   return (
-    <header className="w-full bg-[linear-gradient(to_right,_#bbf7d0,_#fed7aa,_#bfdbfe,_#e9d5ff)]">
+    <header className="w-full bg-gradient-to-r from-fuchsia-500 to-sky-400">
       <div className="flex flex-col items-center p-2 text-center sm:p-3">
         <div className="rounded-2xl border border-accent/50 bg-white/95 px-4 py-2 shadow-xl backdrop-blur-sm sm:px-6">
           <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
