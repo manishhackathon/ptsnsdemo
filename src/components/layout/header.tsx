@@ -17,8 +17,8 @@ const Header = () => {
             <Link href="/">
               <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
                 <Image
-                  src="/university.jpg"
-                  alt="University Logo"
+                  src="/haldipic.png"
+                  alt="Haldi Pic"
                   fill
                   className="object-contain"
                 />
@@ -34,6 +34,16 @@ const Header = () => {
                 </p>
               </Link>
             </div>
+            <Link href="/">
+              <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
+                <Image
+                  src="/university.jpg"
+                  alt="University Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Link>
           </div>
           <div className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[10px] text-foreground/80 sm:text-xs">
             <a
