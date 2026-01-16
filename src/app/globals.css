@@ -42,12 +42,12 @@ h1, h2, h3, h4, h5, h6 {
 
     --radius: 0.5rem;
 
-    --background-left: 210 100% 95%;
-    --background-right: 340 100% 95%;
-    --vector-fill-left: 210 100% 92%;
-    --vector-fill-right: 340 100% 92%;
-    --vector-stroke-left: 210 90% 88%;
-    --vector-stroke-right: 340 90% 88%;
+    --background-left: 0 100% 95%;
+    --background-right: 0 100% 95%;
+    --vector-fill-left: 30 100% 92%;
+    --vector-fill-right: 30 100% 92%;
+    --vector-stroke-left: 30 90% 88%;
+    --vector-stroke-right: 30 90% 88%;
 
     --header-bg-left: 195 90% 85%;
     --header-bg-right: 195 90% 85%;
@@ -82,12 +82,12 @@ h1, h2, h3, h4, h5, h6 {
     --input: 240 3.7% 15.9%;
     --ring: 210 100% 60%;
 
-    --background-left: 210 20% 12%;
-    --background-right: 340 20% 12%;
-    --vector-fill-left: 210 20% 15%;
-    --vector-fill-right: 340 20% 15%;
-    --vector-stroke-left: 210 30% 20%;
-    --vector-stroke-right: 340 30% 20%;
+    --background-left: 0 20% 12%;
+    --background-right: 0 20% 12%;
+    --vector-fill-left: 30 20% 15%;
+    --vector-fill-right: 30 20% 15%;
+    --vector-stroke-left: 30 30% 20%;
+    --vector-stroke-right: 30 30% 20%;
 
     --header-bg-left: 195 40% 20%;
     --header-bg-right: 195 40% 20%;
