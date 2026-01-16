@@ -21,7 +21,7 @@ const Header = () => {
             src={leftLogo.imageUrl}
             alt={leftLogo.description}
             fill
-            className="object-contain"
+            className="object-cover"
             data-ai-hint={leftLogo.imageHint}
           />
         </div>
@@ -34,7 +34,7 @@ const Header = () => {
             src={rightLogo.imageUrl}
             alt={rightLogo.description}
             fill
-            className="object-contain"
+            className="object-cover"
             data-ai-hint={rightLogo.imageHint}
           />
         </div>
