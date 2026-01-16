@@ -99,7 +99,11 @@ h1, h2, h3, h4, h5, h6 {
     @apply border-border;
   }
   body {
-    background-color: hsl(var(--background));
+    background-image: url('/body.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     @apply text-foreground;
   }
 }
