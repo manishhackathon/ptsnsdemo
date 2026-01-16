@@ -5,25 +5,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { useEffect, useState } from 'react';
 
 const Header = () => {
-  const [imageSrc, setImageSrc] = useState('/header.png');
-
-  useEffect(() => {
-    setImageSrc(`/header.png?_=${new Date().getTime()}`);
-  }, []);
-
   return (
-    <header className="relative w-full overflow-hidden bg-white">
-      <Image
-        src={imageSrc}
-        alt="Header collage of Turmeric farmers, Millet Production, a tiger, and tribal heritage."
-        fill
-        className="object-cover"
-      />
-      <div className="absolute inset-0 bg-black/20" />
-      <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
+    <header className="w-full bg-[linear-gradient(to_right,_#bbf7d0,_#fed7aa,_#bfdbfe,_#e9d5ff)]">
+      <div className="flex flex-col items-center p-2 text-center sm:p-3">
         <div className="rounded-2xl border border-accent/50 bg-white/95 px-4 py-2 shadow-xl backdrop-blur-sm sm:px-6">
           <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
             <Link href="/">
