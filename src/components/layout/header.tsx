@@ -15,14 +15,15 @@ const Header = () => {
         <div className="flex w-40 flex-col items-center gap-2 text-center">
           {leftLogo && (
             <Link href="#">
-              <Image
-                src={leftLogo.imageUrl}
-                alt={leftLogo.description}
-                width={90}
-                height={90}
-                className="rounded-full object-cover shadow-md border-2 border-primary/50"
-                data-ai-hint={leftLogo.imageHint}
-              />
+              <div className="relative h-[90px] w-[90px] overflow-hidden rounded-full border-2 border-primary/50 shadow-md">
+                <Image
+                  src={leftLogo.imageUrl}
+                  alt={leftLogo.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={leftLogo.imageHint}
+                />
+              </div>
             </Link>
           )}
           <p className="text-sm font-medium text-foreground/80">{leftLogo?.description}</p>
@@ -32,14 +33,15 @@ const Header = () => {
             <div className="flex items-center gap-4">
                 {centerLogo && (
                 <Link href="/">
+                  <div className="relative h-[90px] w-[90px] overflow-hidden rounded-full border-4 border-primary shadow-lg">
                     <Image
                         src={centerLogo.imageUrl}
                         alt={centerLogo.description}
-                        width={90}
-                        height={90}
-                        className="rounded-full object-cover shadow-lg border-4 border-primary"
+                        fill
+                        className="object-cover"
                         data-ai-hint={centerLogo.imageHint}
                     />
+                  </div>
                 </Link>
                 )}
                 <div className='text-left'>
@@ -56,14 +58,15 @@ const Header = () => {
         <div className="flex w-40 flex-col items-center gap-2 text-center">
           {rightLogo && (
             <Link href="#">
-              <Image
-                src={rightLogo.imageUrl}
-                alt={rightLogo.description}
-                width={90}
-                height={90}
-                className="rounded-full object-cover shadow-md border-2 border-accent/50"
-                data-ai-hint={rightLogo.imageHint}
-              />
+              <div className="relative h-[90px] w-[90px] overflow-hidden rounded-full border-2 border-accent/50 shadow-md">
+                <Image
+                  src={rightLogo.imageUrl}
+                  alt={rightLogo.description}
+                  fill
+                  className="object-cover"
+                  data-ai-hint={rightLogo.imageHint}
+                />
+              </div>
             </Link>
           )}
            <p className="text-sm font-medium text-foreground/80">{rightLogo?.description}</p>
