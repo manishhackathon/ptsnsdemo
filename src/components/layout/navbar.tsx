@@ -113,7 +113,7 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="xl:hidden">
+    <div className="rounded-md border border-primary xl:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/10 hover:text-primary/90">
@@ -170,7 +170,7 @@ const MobileNav = () => {
 
 const NavBar = () => {
     return (
-        <div className="sticky top-0 z-40 w-full border-y border-primary bg-white">
+        <div className="sticky top-0 z-40 w-full bg-white xl:border-y xl:border-primary">
             <div className="container mx-auto flex h-14 items-center justify-end px-4 xl:justify-center">
                 <NavMenu />
                 <MobileNav />
