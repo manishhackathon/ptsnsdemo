@@ -8,37 +8,30 @@ import { Input } from '@/components/ui/input';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const Header = () => {
-  const leftLogo = PlaceHolderImages.find((img) => img.id === 'header-logo-left');
-  const rightLogo = PlaceHolderImages.find((img) => img.id === 'header-logo-right');
+  const bgImages = [
+    PlaceHolderImages.find((img) => img.id === 'header-bg-1'),
+    PlaceHolderImages.find((img) => img.id === 'header-bg-2'),
+    PlaceHolderImages.find((img) => img.id === 'header-bg-3'),
+    PlaceHolderImages.find((img) => img.id === 'header-bg-4'),
+  ].filter((img): img is NonNullable<typeof img> => !!img);
+
   const centerLogo = PlaceHolderImages.find((img) => img.id === 'header-logo-center');
 
   return (
     <header className="relative w-full overflow-hidden bg-card">
-      {/* Left Watermark Logo */}
-      {leftLogo && (
-        <div className="pointer-events-none absolute left-0 top-1/2 z-0 h-[400px] w-[400px] -translate-y-1/2 -translate-x-1/3">
-          <Image
-            src={leftLogo.imageUrl}
-            alt={leftLogo.description}
-            fill
-            className="object-cover"
-            data-ai-hint={leftLogo.imageHint}
-          />
-        </div>
-      )}
-
-      {/* Right Watermark Logo */}
-      {rightLogo && (
-        <div className="pointer-events-none absolute right-0 top-1/2 z-0 h-[400px] w-[400px] -translate-y-1/2 translate-x-1/3">
-          <Image
-            src={rightLogo.imageUrl}
-            alt={rightLogo.description}
-            fill
-            className="object-cover"
-            data-ai-hint={rightLogo.imageHint}
-          />
-        </div>
-      )}
+      <div className="absolute inset-0 flex">
+        {bgImages.map((image) => (
+          <div key={image.id} className="relative h-full w-1/4">
+            <Image
+              src={image.imageUrl}
+              alt={image.description}
+              fill
+              className="object-cover"
+              data-ai-hint={image.imageHint}
+            />
+          </div>
+        ))}
+      </div>
 
       <div className="relative z-10 flex min-w-0 flex-1 flex-col items-center p-4 pb-6 text-center">
         <div className="rounded-3xl border border-accent/50 bg-white/95 px-6 py-4 shadow-2xl shadow-primary/20 backdrop-blur-sm sm:px-10 sm:py-6">
