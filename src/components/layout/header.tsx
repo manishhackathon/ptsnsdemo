@@ -44,12 +44,12 @@ const Header = () => {
                 </div>
               </Link>
             )}
-            <div>
+            <div className="text-center md:text-left">
               <Link href="/">
-                <h1 className="text-center font-headline text-2xl font-bold tracking-tight text-primary md:text-left md:text-3xl">
+                <h1 className="font-headline text-2xl font-bold tracking-tight text-primary md:text-3xl">
                   Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                 </h1>
-                <p className="mt-1 text-center font-hindi text-xl font-bold text-primary/80 md:text-left md:text-2xl">
+                <p className="mt-1 font-hindi text-xl font-bold text-primary md:text-2xl">
                   पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                 </p>
               </Link>
