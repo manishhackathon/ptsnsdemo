@@ -26,12 +26,22 @@ const Header = () => {
 
           <div className="rounded-2xl border border-accent/50 bg-white/70 px-4 py-2 shadow-xl backdrop-blur-sm sm:px-6">
             <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
+              <Link href="/">
+                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
+                  <Image
+                    src="/university.jpg"
+                    alt="University Logo"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </Link>
               <div className="text-center">
                 <Link href="/">
                   <h1 className="font-headline text-base font-bold tracking-tight text-primary sm:text-lg md:text-xl lg:text-2xl">
                     Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                   </h1>
-                  <p className="mt-0.5 font-hindi text-base font-bold text-primary/90 sm:text-lg md:text-xl">
+                  <p className="mt-0.5 font-hindi text-xl font-bold text-primary/90 sm:text-lg md:text-xl">
                     पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                   </p>
                 </Link>
@@ -55,17 +65,6 @@ const Header = () => {
               </a>
             </div>
           </div>
-
-          <Link href="/">
-            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
-              <Image
-                src="/university.jpg"
-                alt="University Logo"
-                fill
-                className="object-contain"
-              />
-            </div>
-          </Link>
         </div>
         <div className="mt-3 w-full max-w-xs sm:mt-4 sm:max-w-sm md:max-w-md">
           <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
