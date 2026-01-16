@@ -26,7 +26,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased bg-background">
         <BackgroundVectors />
-        <div className="relative mx-auto flex min-h-screen max-w-[90%] flex-col border border-accent/50 bg-card shadow-2xl">
+        <div className="relative z-10 mx-auto flex min-h-screen max-w-[90%] flex-col border border-accent/50 bg-card shadow-2xl">
           <Header />
           <NewsTicker />
           <NavBar />

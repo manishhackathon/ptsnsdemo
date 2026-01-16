@@ -50,7 +50,7 @@ const vectors = [
 const BackgroundVectors = () => {
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-0 h-full w-full overflow-hidden text-destructive"
+      className="pointer-events-none fixed inset-0 z-0 h-full w-full overflow-hidden text-destructive opacity-25"
       aria-hidden="true"
     >
       {vectors.map(({ Icon, style }, index) => (
