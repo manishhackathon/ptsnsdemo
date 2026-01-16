@@ -13,7 +13,7 @@ const Header = () => {
       <HeaderBackground />
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
-          <Link href="/">
+          <Link href="/" className="hidden lg:block">
             <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
               <Image
                 src="/haldipic.png"
@@ -41,7 +41,7 @@ const Header = () => {
                   <h1 className="font-headline text-base font-bold tracking-tight text-primary sm:text-lg md:text-xl lg:text-2xl">
                     Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                   </h1>
-                  <p className="mt-0.5 font-hindi text-xl font-bold text-primary/90 sm:text-lg md:text-xl">
+                  <p className="font-hindi text-xl font-bold text-primary/90 sm:text-lg md:text-xl">
                     पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                   </p>
                 </Link>
@@ -65,6 +65,17 @@ const Header = () => {
               </a>
             </div>
           </div>
+
+          <Link href="/" className="hidden lg:block">
+            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
+              <Image
+                src="/haldipic.png"
+                alt="University Seal"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </Link>
         </div>
         <div className="mt-3 w-full max-w-xs sm:mt-4 sm:max-w-sm md:max-w-md">
           <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
