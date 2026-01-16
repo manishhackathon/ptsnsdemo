@@ -14,7 +14,7 @@ const Header = () => {
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
           <Link href="/" className="hidden xl:block">
-            <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl md:h-32 md:w-32 xl:h-44 xl:w-44">
+            <div className="relative h-28 w-28 shrink-0 overflow-hidden rounded-2xl md:h-32 md:w-32 xl:h-64 xl:w-64">
               <Image
                 src="/haldipic.png"
                 alt="Haldi Pic"
@@ -66,7 +66,7 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="hidden xl:block w-44"></div>
+          <div className="hidden xl:block w-64"></div>
 
         </div>
         <div className="mt-3 w-full max-w-xs sm:mt-4 sm:max-w-sm md:max-w-md">
