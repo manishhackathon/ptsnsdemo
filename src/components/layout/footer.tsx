@@ -1,0 +1,41 @@
+import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import Link from 'next/link';
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-primary/5 border-t border-primary/10 text-foreground">
+      <div className="container mx-auto max-w-[85%] px-4 py-8">
+        <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
+          <div className="text-center md:text-left">
+            <h3 className="font-headline text-lg font-semibold text-primary">Rewa Royals University</h3>
+            <p className="mt-1 text-sm text-muted-foreground">© {currentYear} Rewa Royals University. All rights reserved.</p>
+          </div>
+          <div className="flex flex-col items-center gap-4">
+            <div className="text-center text-sm text-muted-foreground">
+              <p>University Road, Rewa, Madhya Pradesh, 486003, India</p>
+              <p>Email: contact@rru.ac.in | Phone: +91-7662-123456</p>
+            </div>
+            <div className="flex space-x-4">
+              <Link href="#" aria-label="Facebook">
+                <Facebook className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+              </Link>
+              <Link href="#" aria-label="Twitter">
+                <Twitter className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+              </Link>
+              <Link href="#" aria-label="LinkedIn">
+                <Linkedin className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+              </Link>
+              <Link href="#" aria-label="Instagram">
+                <Instagram className="h-6 w-6 text-muted-foreground transition-colors hover:text-primary" />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
