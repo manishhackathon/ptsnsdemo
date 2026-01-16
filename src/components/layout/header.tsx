@@ -20,7 +20,7 @@ const Header = () => {
         src={imageSrc}
         alt="Header collage of Turmeric farmers, Millet Production, a tiger, and tribal heritage."
         fill
-        className="object-contain"
+        className="object-cover"
       />
       <div className="absolute inset-0 bg-black/20" />
       <div className="relative z-10 flex min-w-0 flex-1 flex-col items-center p-4 pb-6 text-center">
