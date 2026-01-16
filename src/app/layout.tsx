@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <div
-          className="fixed inset-0 z-0 bg-cover bg-center brightness-90 opacity-80"
+          className="fixed inset-0 z-0 bg-cover bg-center brightness-75 opacity-60"
           style={{
             backgroundImage: "url('/body.png')",
           }}
