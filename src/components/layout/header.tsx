@@ -33,7 +33,7 @@ const Header = () => {
           <div className="flex flex-col items-center gap-4 md:flex-row md:items-center">
             {centerLogo && (
               <Link href="/">
-                <div className="relative h-[80px] w-[80px] overflow-hidden rounded-full border-4 border-primary shadow-lg md:h-[90px] md:w-[90px]">
+                <div className="relative h-[80px] w-[80px] shrink-0 overflow-hidden rounded-full border-4 border-primary shadow-lg md:h-[90px] md:w-[90px]">
                   <Image
                     src={centerLogo.imageUrl}
                     alt={centerLogo.description}
@@ -49,6 +49,9 @@ const Header = () => {
                 <h1 className="text-center font-headline text-2xl font-bold tracking-tight text-primary md:text-left md:text-3xl">
                   Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                 </h1>
+                <p className="mt-1 text-center font-hindi text-xl font-bold text-primary/80 md:text-left md:text-2xl">
+                  पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
+                </p>
               </Link>
             </div>
           </div>

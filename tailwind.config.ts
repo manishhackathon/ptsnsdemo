@@ -20,6 +20,7 @@ export default {
         body: ['Roboto', 'sans-serif'],
         headline: ['Lora', 'serif'],
         code: ['monospace'],
+        hindi: ['"Noto Sans Devanagari"', 'sans-serif'],
       },
       colors: {
         background: 'hsl(var(--background))',
