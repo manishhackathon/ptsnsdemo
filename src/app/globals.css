@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer base {
   :root {
-    --background: 300 81% 94%;
+    --background: 351 100% 86%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     @apply border-border;
   }
   body {
-    background-color: #F0E1DB;
+    background-color: hsl(var(--background));
     @apply text-foreground;
   }
 }
