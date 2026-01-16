@@ -14,7 +14,7 @@ const Header = () => {
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
           <Link href="/" className="hidden xl:block">
-            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
+            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14 xl:h-[10.5rem] xl:w-[10.5rem]">
               <Image
                 src="/haldipic.png"
                 alt="Haldi Pic"
@@ -67,7 +67,7 @@ const Header = () => {
           </div>
 
           <Link href="/" className="hidden xl:block">
-            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
+            <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14 xl:h-[10.5rem] xl:w-[10.5rem]">
               <Image
                 src="/tribal.png"
                 alt="Tribal Art"
