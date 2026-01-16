@@ -60,11 +60,11 @@ const Header = () => {
           </div>
 
           <div className="mt-6 w-full max-w-xl">
-            <div className="relative rounded-full bg-muted/50 shadow-2xl shadow-primary/20">
+            <div className="relative rounded-full bg-background shadow-2xl shadow-primary/20">
               <Search className="absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted-foreground" />
               <Input
                 placeholder="Search courses, notices, faculty, research..."
-                className="h-12 w-full rounded-full border-2 border-transparent bg-transparent pl-12 pr-14 transition-colors focus:border-primary/50 focus:bg-background"
+                className="h-12 w-full rounded-full border-2 border-border bg-transparent pl-12 pr-14 transition-colors focus:border-primary/50 focus:bg-background"
               />
               <Button
                 size="icon"
