@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 
 const Header = () => {
   return (
-    <header className="w-full bg-purple-500">
+    <header className="w-full bg-[#D03D56]">
       <div className="flex flex-col items-center p-2 text-center sm:p-3">
         <div className="rounded-2xl border border-accent/50 bg-white/95 px-4 py-2 shadow-xl backdrop-blur-sm sm:px-6">
           <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
@@ -18,7 +18,7 @@ const Header = () => {
                   src="/university.jpg"
                   alt="University Logo"
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
             </Link>
