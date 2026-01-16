@@ -38,10 +38,10 @@ h1, h2, h3, h4, h5, h6 {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
-    --background-left: 270 100% 98%;
-    --background-right: 340 100% 98%;
-    --vector-left: 270 80% 90%;
-    --vector-right: 340 80% 90%;
+    --background-left: 270 100% 95%;
+    --background-right: 340 100% 95%;
+    --vector-left: 270 80% 85%;
+    --vector-right: 340 80% 85%;
   }
 
   .dark {
