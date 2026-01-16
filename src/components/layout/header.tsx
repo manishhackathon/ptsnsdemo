@@ -12,7 +12,7 @@ const Header = () => {
     <header className="relative w-full">
       <HeaderBackground />
       <div className="relative flex flex-col items-center p-2 text-center sm:p-3">
-        <div className="rounded-2xl border border-accent/50 bg-white/95 px-4 py-2 shadow-xl backdrop-blur-sm sm:px-6">
+        <div className="rounded-2xl border border-accent/50 bg-transparent px-4 py-2 shadow-xl backdrop-blur-sm sm:px-6">
           <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
             <Link href="/">
               <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
