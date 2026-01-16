@@ -1,20 +1,20 @@
 import React from 'react';
 
 const DegreeCapIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+  <svg viewBox="0 0 24 24" fill="currentColor" width="100%" height="100%" className={className}>
     <path d="M12 3L2 8l10 5 10-5-10-5zM4.4 9.4l7.6 3.8 7.6-3.8-7.6-4.2-7.6 4.2zM4 11v6l8 4 8-4v-6l-8 4-8-4z" />
   </svg>
 );
 
 const BookIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
+  <svg viewBox="0 0 24 24" fill="currentColor" width="100%" height="100%" className={className}>
     <path d="M19 2H9c-1.11 0-2 .89-2 2v10c0 1.11.89 2 2 2h10c1.11 0 2-.89 2-2V4c0-1.11-.89-2-2-2zm-1 12H10V4h8v10z" />
     <path d="M5 6H3v12c0 1.11.89 2 2 2h12v-2H5V6z" />
   </svg>
 );
 
 const MilletIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 64 64" fill="currentColor" className={className}>
+  <svg viewBox="0 0 64 64" fill="currentColor" width="100%" height="100%" className={className}>
     <path d="M32 60 C40 40 40 30 30 18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" />
     <circle cx="28" cy="22" r="2.5" />
     <circle cx="32" cy="26" r="2.5" />
@@ -25,7 +25,7 @@ const MilletIcon = ({ className }: { className?: string }) => (
 );
 
 const TurmericIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 64 64" fill="currentColor" className={className}>
+  <svg viewBox="0 0 64 64" fill="currentColor" width="100%" height="100%" className={className}>
     <path d="M30,20 C40,15 45,25 40,35 C35,45 20,45 18,35 C16,25 20,25 30,20z" />
     <path d="M40,35 C50,30 55,40 50,50 C45,60 30,60 28,50 C26,40 30,40 40,35z" opacity="0.8" />
   </svg>
@@ -50,7 +50,7 @@ const vectors = [
 const BackgroundVectors = () => {
   return (
     <div
-      className="pointer-events-none fixed inset-0 z-[-1] h-full w-full overflow-hidden text-[#F72F35]"
+      className="pointer-events-none fixed inset-0 z-[1] h-full w-full overflow-hidden text-[#F72F35]"
       aria-hidden="true"
     >
       {vectors.map(({ Icon, style }, index) => (
