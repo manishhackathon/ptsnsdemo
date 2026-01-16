@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer base {
   :root {
-    --background: 351 100% 86%;
+    --background: 120 51% 93%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
