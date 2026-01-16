@@ -9,13 +9,13 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">
-            <h3 className="font-headline text-lg font-semibold text-primary">Rewa Royals University</h3>
-            <p className="mt-1 text-sm text-muted-foreground">© {currentYear} Rewa Royals University. All rights reserved.</p>
+            <h3 className="font-headline text-lg font-semibold text-primary">University of Shahdol</h3>
+            <p className="mt-1 text-sm text-muted-foreground">© {currentYear} University of Shahdol. All rights reserved.</p>
           </div>
           <div className="flex flex-col items-center gap-4">
             <div className="text-center text-sm text-muted-foreground">
-              <p>University Road, Rewa, Madhya Pradesh, 486003, India</p>
-              <p>Email: contact@rru.ac.in | Phone: +91-7662-123456</p>
+              <p>University Road, Shahdol, Madhya Pradesh, 484001, India</p>
+              <p>Email: contact@uos.ac.in | Phone: +91-7652-123456</p>
             </div>
             <div className="flex space-x-4">
               <Link href="#" aria-label="Facebook">

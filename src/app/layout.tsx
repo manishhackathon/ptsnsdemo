@@ -4,9 +4,10 @@ import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import BackgroundVectors from '@/components/background-vectors';
+import NavBar from '@/components/layout/navbar';
 
 export const metadata: Metadata = {
-  title: 'Rewa Royals University',
+  title: 'University of Shahdol',
   description: 'A premier institution of higher learning and research.',
 };
 
@@ -22,10 +23,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">
+      <body className="font-body antialiased bg-background">
         <BackgroundVectors />
-        <div className="relative mx-auto flex min-h-screen w-full max-w-[85%] flex-col bg-background shadow-2xl">
+        <div className="relative mx-auto flex min-h-screen w-full max-w-[85%] flex-col bg-card shadow-2xl">
           <Header />
+          <NavBar />
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
