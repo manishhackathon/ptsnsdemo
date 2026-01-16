@@ -47,10 +47,9 @@ const Header = () => {
             <div>
               <Link href="/">
                 <h1 className="font-headline text-2xl font-bold tracking-tight text-primary md:text-3xl">
-                  University of Shahdol
+                  Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                 </h1>
               </Link>
-              <p className="text-muted-foreground">Madhya Pradesh, India</p>
             </div>
           </div>
         </div>

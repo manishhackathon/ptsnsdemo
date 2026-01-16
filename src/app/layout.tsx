@@ -7,7 +7,7 @@ import BackgroundVectors from '@/components/background-vectors';
 import NavBar from '@/components/layout/navbar';
 
 export const metadata: Metadata = {
-  title: 'University of Shahdol',
+  title: 'Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)',
   description: 'A premier institution of higher learning and research.',
 };
 
@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased bg-background">
         <BackgroundVectors />
-        <div className="relative mx-auto flex min-h-screen w-full max-w-full flex-col bg-card shadow-2xl md:max-w-[90%]">
+        <div className="relative mx-auto flex min-h-screen w-full max-w-[90%] flex-col bg-card shadow-2xl">
           <Header />
           <NavBar />
           <main className="flex-1">{children}</main>

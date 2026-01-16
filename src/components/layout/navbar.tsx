@@ -123,7 +123,7 @@ const MobileNav = () => {
         </SheetTrigger>
         <SheetContent side="right" className="w-[280px] bg-card">
           <div className="flex flex-col space-y-2 p-6">
-            <Link href="/" onClick={() => setIsOpen(false)} className="font-headline text-2xl font-bold text-primary mb-4">University of Shahdol</Link>
+            <Link href="/" onClick={() => setIsOpen(false)} className="font-headline text-lg font-bold text-primary mb-4">P.S.N.S. Vishwavidyalaya</Link>
             {navLinks.map((link) => {
               if (link.subLinks) {
                 return (
