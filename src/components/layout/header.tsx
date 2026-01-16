@@ -69,7 +69,7 @@ const Header = () => {
           <Link href="/" className="hidden lg:block">
             <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
               <Image
-                src="/tibal.png"
+                src="/tribal.png"
                 alt="Tribal Art"
                 fill
                 className="object-contain"
