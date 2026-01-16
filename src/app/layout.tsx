@@ -5,6 +5,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import BackgroundVectors from '@/components/background-vectors';
 import NavBar from '@/components/layout/navbar';
+import NewsTicker from '@/components/layout/news-ticker';
 
 export const metadata: Metadata = {
   title: 'Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)',
@@ -27,6 +28,7 @@ export default function RootLayout({
         <BackgroundVectors />
         <div className="relative mx-auto flex min-h-screen w-full max-w-[90%] flex-col border border-accent/50 bg-card shadow-2xl">
           <Header />
+          <NewsTicker />
           <NavBar />
           <main className="flex-1">{children}</main>
           <Footer />
