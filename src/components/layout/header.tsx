@@ -11,11 +11,11 @@ const Header = () => {
 
   return (
     <header className="w-full bg-card">
-      <div className="flex flex-col items-center justify-between gap-4 px-4 py-6 md:flex-row">
-        <div className="order-2 flex flex-col items-center gap-2 text-center md:order-1">
+      <div className="flex items-center justify-between gap-4 px-4 py-6">
+        <div className="flex flex-col items-center gap-2 text-center">
           {leftLogo && (
             <Link href="#">
-              <div className="relative h-[70px] w-[70px] overflow-hidden rounded-full md:h-[90px] md:w-[90px]">
+              <div className="relative h-[70px] w-[70px] overflow-hidden md:h-[90px] md:w-[90px]">
                 <Image
                   src={leftLogo.imageUrl}
                   alt={leftLogo.description}
@@ -29,12 +29,12 @@ const Header = () => {
           <p className="text-xs font-medium text-foreground/80 md:text-sm">{leftLogo?.description}</p>
         </div>
 
-        <div className="order-1 flex flex-1 justify-center text-center md:order-2">
+        <div className="flex flex-1 justify-center text-center">
           <div className="flex flex-col items-center gap-4 text-center">
             <div className="flex items-center justify-center gap-4">
               {centerLogo && (
                 <Link href="/">
-                  <div className="relative h-[80px] w-[80px] shrink-0 overflow-hidden rounded-full md:h-[90px] md:w-[90px]">
+                  <div className="relative h-[80px] w-[80px] shrink-0 overflow-hidden md:h-[90px] md:w-[90px]">
                     <Image
                       src={centerLogo.imageUrl}
                       alt={centerLogo.description}
@@ -59,10 +59,10 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="order-3 flex flex-col items-center gap-2 text-center md:order-3">
+        <div className="flex flex-col items-center gap-2 text-center">
           {rightLogo && (
             <Link href="#">
-              <div className="relative h-[70px] w-[70px] overflow-hidden rounded-full md:h-[90px] md:w-[90px]">
+              <div className="relative h-[70px] w-[70px] overflow-hidden md:h-[90px] md:w-[90px]">
                 <Image
                   src={rightLogo.imageUrl}
                   alt={rightLogo.description}
