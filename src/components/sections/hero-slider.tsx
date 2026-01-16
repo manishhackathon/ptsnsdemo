@@ -39,7 +39,7 @@ const HeroSlider = () => {
           {sliderImages.map((image) => (
             <CarouselItem key={image.id}>
               <Card className="overflow-hidden border-none shadow-2xl shadow-primary/20">
-                <CardContent className="relative aspect-[4/3] p-0 md:aspect-[21/9]">
+                <CardContent className="relative aspect-[16/9] p-0 md:aspect-[24/9]">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
@@ -49,11 +49,11 @@ const HeroSlider = () => {
                     data-ai-hint={image.imageHint}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-0 left-0 p-4 md:p-8">
-                     <h2 className="font-headline text-2xl font-bold text-white sm:text-3xl md:text-4xl">
+                  <div className="absolute bottom-0 left-0 p-4 md:p-6">
+                     <h2 className="font-headline text-xl font-bold text-white sm:text-2xl md:text-3xl">
                        Excellence in Education, Rooted in Heritage
                      </h2>
-                     <p className="mt-2 max-w-2xl text-base text-white/90 md:text-base">
+                     <p className="mt-1 max-w-xl text-sm text-white/90 md:text-base">
                        Discover a vibrant community dedicated to learning and innovation.
                      </p>
                   </div>
