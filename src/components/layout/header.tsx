@@ -16,7 +16,7 @@ const Header = () => {
     <header className="relative w-full overflow-hidden bg-card">
       {/* Left Watermark Logo */}
       {leftLogo && (
-        <div className="pointer-events-none absolute left-0 top-1/2 z-0 h-[400px] w-[400px] -translate-y-1/2 -translate-x-1/3 opacity-20">
+        <div className="pointer-events-none absolute left-0 top-1/2 z-0 h-[400px] w-[400px] -translate-y-1/2 -translate-x-1/3">
           <Image
             src={leftLogo.imageUrl}
             alt={leftLogo.description}
@@ -29,7 +29,7 @@ const Header = () => {
 
       {/* Right Watermark Logo */}
       {rightLogo && (
-        <div className="pointer-events-none absolute right-0 top-1/2 z-0 h-[400px] w-[400px] -translate-y-1/2 translate-x-1/3 opacity-20">
+        <div className="pointer-events-none absolute right-0 top-1/2 z-0 h-[400px] w-[400px] -translate-y-1/2 translate-x-1/3">
           <Image
             src={rightLogo.imageUrl}
             alt={rightLogo.description}
