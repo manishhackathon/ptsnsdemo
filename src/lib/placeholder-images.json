@@ -7,30 +7,6 @@
       "imageHint": "university building"
     },
     {
-      "id": "header-bg-1",
-      "description": "Turmeric farmers",
-      "imageUrl": "https://images.unsplash.com/photo-1620757279313-9a8c625893a9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0dXJtZXJpYyUyMGZhcm1lcnN8ZW58MHx8fHwxNzY4NjA2ODU0fDA&ixlib.rb-4.0.3&q=80&w=1080",
-      "imageHint": "turmeric farmer"
-    },
-    {
-      "id": "header-bg-2",
-      "description": "Millet production",
-      "imageUrl": "https://images.unsplash.com/photo-1627894628742-c65f58356972?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtaWxsZXQlMjBwcm9kdWN0aW9ufGVufDB8fHx8MTc2ODYwNjg5N3ww&ixlib.rb-4.0.3&q=80&w=1080",
-      "imageHint": "millet production"
-    },
-    {
-      "id": "header-bg-3",
-      "description": "Tiger in a jungle",
-      "imageUrl": "https://images.unsplash.com/photo-1589551422394-159670d07527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aWdlciUyMGp1bmdsZXxlbnwwfHx8fDE3Njg2MDY5MjZ8MA&ixlib.rb-4.0.3&q=80&w=1080",
-      "imageHint": "tiger jungle"
-    },
-    {
-      "id": "header-bg-4",
-      "description": "Tribal heritage",
-      "imageUrl": "https://images.unsplash.com/photo-1621219211029-4a034044a836?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmliYWwlMjBoZXJpdGFnZXxlbnwwfHx8fDE3Njg2MDY5NTV8MA&ixlib.rb-4.0.3&q=80&w=1080",
-      "imageHint": "tribal heritage"
-    },
-    {
       "id": "slider-1",
       "description": "University campus view",
       "imageUrl": "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx1bml2ZXJzaXR5JTIwY2FtcHVzfGVufDB8fHx8MTc2ODU2NzU4Mnww&ixlib.rb-4.1.0&q=80&w=1080",
