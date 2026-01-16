@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -121,38 +121,46 @@ const MobileNav = () => {
             <span className="sr-only">Open navigation menu</span>
           </Button>
         </SheetTrigger>
-        <SheetContent side="right" className="w-[280px] bg-card">
-          <div className="flex flex-col space-y-2 p-6">
-            <Link href="/" onClick={() => setIsOpen(false)} className="font-headline text-lg font-bold text-primary mb-4">P.S.N.S. Vishwavidyalaya</Link>
-            {navLinks.map((link) => {
-              if (link.subLinks) {
+        <SheetContent side="right" className="w-[280px] bg-card p-0">
+          <SheetHeader className="p-6 text-left border-b">
+            <SheetTitle>
+              <Link href="/" onClick={() => setIsOpen(false)} className="font-headline text-lg font-bold text-primary">
+                P.S.N.S. Vishwavidyalaya
+              </Link>
+            </SheetTitle>
+          </SheetHeader>
+          <div className="h-full overflow-y-auto">
+            <div className="flex flex-col space-y-2 p-6">
+              {navLinks.map((link) => {
+                if (link.subLinks) {
+                  return (
+                    <div key={link.label} className="flex flex-col space-y-2">
+                      <p className="font-semibold text-foreground/80">{link.label}</p>
+                      {link.subLinks.map(sublink => (
+                         <Link
+                          key={sublink.label}
+                          href={sublink.href}
+                          className="pl-4 text-base font-medium text-foreground/70 transition-colors hover:text-primary"
+                          onClick={() => setIsOpen(false)}
+                        >
+                          {sublink.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )
+                }
                 return (
-                  <div key={link.label} className="flex flex-col space-y-2">
-                    <p className="font-semibold text-foreground/80">{link.label}</p>
-                    {link.subLinks.map(sublink => (
-                       <Link
-                        key={sublink.label}
-                        href={sublink.href}
-                        className="pl-4 text-base font-medium text-foreground/70 transition-colors hover:text-primary"
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {sublink.label}
-                      </Link>
-                    ))}
-                  </div>
+                   <Link
+                    key={link.label}
+                    href={link.href!}
+                    className="text-base font-medium text-foreground/80 transition-colors hover:text-primary"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
                 )
-              }
-              return (
-                 <Link
-                  key={link.label}
-                  href={link.href!}
-                  className="text-base font-medium text-foreground/80 transition-colors hover:text-primary"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              )
-            })}
+              })}
+            </div>
           </div>
         </SheetContent>
       </Sheet>
