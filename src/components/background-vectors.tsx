@@ -6,81 +6,73 @@ const BackgroundVectors = () => {
     >
       <svg className="h-full w-full">
         <defs>
-          {/* Left side pattern: Turmeric farmers inspired */}
+          {/* Left side pattern: geometric shapes */}
           <pattern
-            id="turmeric-pattern"
-            width="100"
-            height="100"
+            id="geometric-pattern-left"
+            width="300"
+            height="500"
             patternUnits="userSpaceOnUse"
-            patternTransform="scale(1) rotate(-15)"
+            patternTransform="scale(0.7) rotate(5)"
           >
-            <rect width="100" height="100" fill="transparent" />
-            {/* Simple plant/leaf shape */}
-            <path
-              d="M50 20 C 40 40, 60 60, 50 80"
-              stroke="hsl(var(--vector-left))"
-              strokeWidth="0.5"
-              fill="none"
+            <rect width="300" height="500" fill="transparent" />
+            <circle
+              cx="150"
+              cy="120"
+              r="100"
+              fill="hsl(var(--vector-fill-left))"
+              stroke="hsl(var(--vector-stroke-left))"
+              strokeWidth="5"
             />
             <path
-              d="M50 50 C 60 40, 70 40, 75 50"
-              stroke="hsl(var(--vector-left))"
-              strokeWidth="0.5"
-              fill="none"
+              d="M 50 300 A 100 100 0 0 1 250 300 L 50 300 Z"
+              fill="hsl(var(--vector-fill-left))"
+              stroke="hsl(var(--vector-stroke-left))"
+              strokeWidth="5"
             />
-            <path
-              d="M50 50 C 40 60, 30 60, 25 50"
-              stroke="hsl(var(--vector-left))"
-              strokeWidth="0.5"
-              fill="none"
-            />
-            <path
-              d="M10 0 L 10 100"
-              stroke="hsl(var(--vector-left))"
-              strokeWidth="0.2"
-              fill="none"
-            />
-            <path
-              d="M90 0 L 90 100"
-              stroke="hsl(var(--vector-left))"
-              strokeWidth="0.2"
-              fill="none"
+            <rect
+              x="110"
+              y="400"
+              width="80"
+              height="80"
+              transform="rotate(45 150 440)"
+              fill="hsl(var(--vector-fill-left))"
+              stroke="hsl(var(--vector-stroke-left))"
+              strokeWidth="5"
             />
           </pattern>
 
-          {/* Right side pattern: Bandhavgarh tigers and Tribal culture */}
+          {/* Right side pattern: geometric shapes */}
           <pattern
-            id="tiger-tribal-pattern"
-            width="120"
-            height="120"
+            id="geometric-pattern-right"
+            width="300"
+            height="500"
             patternUnits="userSpaceOnUse"
-            patternTransform="scale(1) rotate(15)"
+            patternTransform="scale(0.7) rotate(-5)"
           >
-            <rect width="120" height="120" fill="transparent" />
-            {/* Tiger stripes */}
+            <rect width="300" height="500" fill="transparent" />
             <path
-              d="M10 0 C 10 30, 40 20, 40 50 C 40 80, 10 70, 10 100"
-              stroke="hsl(var(--vector-right))"
-              strokeWidth="1"
-              fill="none"
-              strokeLinecap="round"
+              d="M150 50 L 50 200 L 250 200 Z"
+              fill="hsl(var(--vector-fill-right))"
+              stroke="hsl(var(--vector-stroke-right))"
+              strokeWidth="5"
             />
-            <path
-              d="M70 10 C 70 40, 100 30, 100 60 C 100 90, 70 80, 70 110"
-              stroke="hsl(var(--vector-right))"
-              strokeWidth="1"
-              fill="none"
-              strokeLinecap="round"
+            <rect
+              x="100"
+              y="280"
+              width="100"
+              height="100"
+              fill="hsl(var(--vector-fill-right))"
+              stroke="hsl(var(--vector-stroke-right))"
+              strokeWidth="5"
             />
-            {/* Tribal symbols */}
-            <path
-              d="M 50 60 L 60 70 L 50 80"
-              stroke="hsl(var(--vector-right))"
-              strokeWidth="0.5"
-              fill="none"
+            <circle
+              cx="150"
+              cy="450"
+              r="60"
+              fill="hsl(var(--vector-fill-right))"
+              stroke="hsl(var(--vector-stroke-right))"
+              strokeWidth="5"
             />
-            <circle cx="110" cy="20" r="2" fill="hsl(var(--vector-right))" />
-            <circle cx="30" cy="110" r="1" fill="hsl(var(--vector-right))" />
           </pattern>
         </defs>
 
@@ -106,7 +98,7 @@ const BackgroundVectors = () => {
           y="0"
           width="50%"
           height="100%"
-          fill="url(#turmeric-pattern)"
+          fill="url(#geometric-pattern-left)"
           opacity="1"
         />
 
@@ -116,7 +108,7 @@ const BackgroundVectors = () => {
           y="0"
           width="50%"
           height="100%"
-          fill="url(#tiger-tribal-pattern)"
+          fill="url(#geometric-pattern-right)"
           opacity="1"
         />
       </svg>
