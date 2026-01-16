@@ -5,11 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const Header = () => {
-  const centerLogo = PlaceHolderImages.find((img) => img.id === 'header-logo-center');
-
   return (
     <header className="relative w-full overflow-hidden">
       <Image
@@ -23,19 +20,16 @@ const Header = () => {
       <div className="relative z-10 flex min-w-0 flex-1 flex-col items-center p-4 pb-6 text-center">
         <div className="rounded-3xl border border-accent/50 bg-white/95 px-6 py-4 shadow-2xl shadow-primary/20 backdrop-blur-sm sm:px-10 sm:py-6">
           <div className="flex flex-col items-center justify-center gap-1 sm:gap-2 md:flex-row md:items-start md:gap-4">
-            {centerLogo && (
-              <Link href="/">
-                <div className="relative h-[60px] w-[60px] shrink-0 overflow-hidden rounded-full md:h-[80px] md:w-[80px]">
-                  <Image
-                    src={centerLogo.imageUrl}
-                    alt={centerLogo.description}
-                    fill
-                    className="object-cover"
-                    data-ai-hint={centerLogo.imageHint}
-                  />
-                </div>
-              </Link>
-            )}
+            <Link href="/">
+              <div className="relative h-[60px] w-[60px] shrink-0 overflow-hidden rounded-full md:h-[80px] md:w-[80px]">
+                <Image
+                  src="/university.jpg"
+                  alt="University Logo"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </Link>
             <div className="text-center">
               <Link href="/">
                 <h1 className="font-headline text-lg font-bold tracking-tight text-[#0080FE] sm:text-xl xl:text-3xl">
