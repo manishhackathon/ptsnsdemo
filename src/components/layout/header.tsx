@@ -5,11 +5,13 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import HeaderBackground from './header-background';
 
 const Header = () => {
   return (
-    <header className="w-full bg-[#D03D56]">
-      <div className="flex flex-col items-center p-2 text-center sm:p-3">
+    <header className="relative w-full">
+      <HeaderBackground />
+      <div className="relative flex flex-col items-center p-2 text-center sm:p-3">
         <div className="rounded-2xl border border-accent/50 bg-white/95 px-4 py-2 shadow-xl backdrop-blur-sm sm:px-6">
           <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3">
             <Link href="/">
