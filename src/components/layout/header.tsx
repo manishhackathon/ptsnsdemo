@@ -11,11 +11,11 @@ const Header = () => {
 
   return (
     <header className="w-full bg-card">
-      <div className="container mx-auto flex items-center justify-between px-4 py-4">
-        <div className="flex w-40 flex-col items-center gap-2 text-center">
+      <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 py-6 md:flex-row">
+        <div className="order-2 flex flex-col items-center gap-2 text-center md:order-1 md:w-40">
           {leftLogo && (
             <Link href="#">
-              <div className="relative h-[90px] w-[90px] overflow-hidden rounded-full border-2 border-primary/50 shadow-md">
+              <div className="relative h-[70px] w-[70px] overflow-hidden rounded-full border-2 border-primary/50 shadow-md md:h-[90px] md:w-[90px]">
                 <Image
                   src={leftLogo.imageUrl}
                   alt={leftLogo.description}
@@ -26,39 +26,39 @@ const Header = () => {
               </div>
             </Link>
           )}
-          <p className="text-sm font-medium text-foreground/80">{leftLogo?.description}</p>
-        </div>
-        
-        <div className="flex flex-1 justify-center">
-            <div className="flex items-center gap-4">
-                {centerLogo && (
-                <Link href="/">
-                  <div className="relative h-[90px] w-[90px] overflow-hidden rounded-full border-4 border-primary shadow-lg">
-                    <Image
-                        src={centerLogo.imageUrl}
-                        alt={centerLogo.description}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={centerLogo.imageHint}
-                    />
-                  </div>
-                </Link>
-                )}
-                <div className='text-left'>
-                    <Link href="/">
-                        <h1 className="font-headline text-3xl font-bold tracking-tight text-primary">
-                            University of Shahdol
-                        </h1>
-                    </Link>
-                    <p className="text-muted-foreground">Madhya Pradesh, India</p>
-                </div>
-            </div>
+          <p className="text-xs font-medium text-foreground/80 md:text-sm">{leftLogo?.description}</p>
         </div>
 
-        <div className="flex w-40 flex-col items-center gap-2 text-center">
+        <div className="order-1 flex flex-1 justify-center md:order-2">
+          <div className="flex flex-col items-center gap-4 text-center md:flex-row md:text-left">
+            {centerLogo && (
+              <Link href="/">
+                <div className="relative h-[80px] w-[80px] overflow-hidden rounded-full border-4 border-primary shadow-lg md:h-[90px] md:w-[90px]">
+                  <Image
+                    src={centerLogo.imageUrl}
+                    alt={centerLogo.description}
+                    fill
+                    className="object-cover"
+                    data-ai-hint={centerLogo.imageHint}
+                  />
+                </div>
+              </Link>
+            )}
+            <div>
+              <Link href="/">
+                <h1 className="font-headline text-2xl font-bold tracking-tight text-primary md:text-3xl">
+                  University of Shahdol
+                </h1>
+              </Link>
+              <p className="text-muted-foreground">Madhya Pradesh, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="order-3 flex flex-col items-center gap-2 text-center md:order-3 md:w-40">
           {rightLogo && (
             <Link href="#">
-              <div className="relative h-[90px] w-[90px] overflow-hidden rounded-full border-2 border-accent/50 shadow-md">
+              <div className="relative h-[70px] w-[70px] overflow-hidden rounded-full border-2 border-accent/50 shadow-md md:h-[90px] md:w-[90px]">
                 <Image
                   src={rightLogo.imageUrl}
                   alt={rightLogo.description}
@@ -69,7 +69,7 @@ const Header = () => {
               </div>
             </Link>
           )}
-           <p className="text-sm font-medium text-foreground/80">{rightLogo?.description}</p>
+          <p className="text-xs font-medium text-foreground/80 md:text-sm">{rightLogo?.description}</p>
         </div>
       </div>
     </header>

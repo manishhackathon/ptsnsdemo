@@ -30,7 +30,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Address</h3>
-                <p className="text-foreground/80">University Road, Rewa, Madhya Pradesh, 486003, India</p>
+                <p className="text-foreground/80">University Road, Shahdol, Madhya Pradesh, 484001, India</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -39,7 +39,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <a href="mailto:contact@rru.ac.in" className="text-foreground/80 hover:text-primary">contact@rru.ac.in</a>
+                <a href="mailto:contact@uos.ac.in" className="text-foreground/80 hover:text-primary">contact@uos.ac.in</a>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -48,7 +48,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <h3 className="font-semibold">Phone</h3>
-                <a href="tel:+917662123456" className="text-foreground/80 hover:text-primary">+91-7662-123456</a>
+                <a href="tel:+917652123456" className="text-foreground/80 hover:text-primary">+91-7652-123456</a>
               </div>
             </div>
           </CardContent>
