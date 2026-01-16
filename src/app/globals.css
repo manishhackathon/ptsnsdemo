@@ -49,8 +49,8 @@ h1, h2, h3, h4, h5, h6 {
     --vector-stroke-left: 210 90% 88%;
     --vector-stroke-right: 340 90% 88%;
 
-    --header-bg-left: 195 80% 85%;
-    --header-bg-right: 330 80% 90%;
+    --header-bg-left: 195 90% 85%;
+    --header-bg-right: 195 90% 85%;
   }
 
   .dark {
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
     --vector-stroke-right: 340 30% 20%;
 
     --header-bg-left: 195 40% 20%;
-    --header-bg-right: 330 30% 25%;
+    --header-bg-right: 195 40% 20%;
   }
 }
 
