@@ -9,7 +9,12 @@ import { MobileNav } from './navbar';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 w-full bg-muted/50 backdrop-blur-sm xl:relative xl:min-h-[160px] xl:bg-transparent xl:backdrop-blur-none">
+    <header className="relative sticky top-0 z-50 w-full bg-muted/50 backdrop-blur-sm xl:min-h-[160px] xl:bg-transparent xl:backdrop-blur-none">
+      {/* Hamburger for Tablet View (positioned relative to header) */}
+      <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 md:block xl:hidden">
+        <MobileNav />
+      </div>
+
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl">
           {/* Desktop Header */}
@@ -70,15 +75,15 @@ const Header = () => {
                     />
                   </div>
                 </Link>
-                <Link href="/" className="pr-10 sm:pr-0">
+                <Link href="/" className="pr-10 sm:pr-0 md:pr-0">
                   <h1 className="font-headline text-sm font-bold tracking-tight text-primary sm:text-base sm:whitespace-nowrap">
                     Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
                   </h1>
                 </Link>
               </div>
 
-              {/* Hamburger Menu */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2">
+              {/* Hamburger Menu for Mobile View (hidden on md and up) */}
+              <div className="absolute right-0 top-1/2 -translate-y-1/2 md:hidden">
                 <MobileNav />
               </div>
             </div>
