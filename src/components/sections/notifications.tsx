@@ -83,7 +83,7 @@ const NotificationsSection = () => {
                                   <div className="flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-md bg-primary p-1 leading-none text-primary-foreground">
                                     <span className="text-lg font-bold">{day}</span>
                                     <span className="text-[10px] font-medium">{month}</span>
-                                    <span className="text-[9px] font-medium opacity-80">'{year}</span>
+                                    <span className="text-[10px] font-medium">'{year}</span>
                                   </div>
                                   <p className="whitespace-normal pt-1 text-sm font-medium text-foreground/90">{notice.text}</p>
                                 </div>
