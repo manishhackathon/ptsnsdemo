@@ -13,10 +13,11 @@ const Chatbot = () => {
     return (
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 h-16 w-16 rounded-full bg-primary text-primary-foreground shadow-lg transition-transform hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-lg bg-primary px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
         aria-label="Open chatbot"
       >
-        <Bot className="h-8 w-8" />
+        <Bot className="h-6 w-6" />
+        <span className="font-medium">Chat With Us</span>
       </Button>
     );
   }
