@@ -26,20 +26,20 @@ const HeroSlider = () => {
 
   return (
     <section className="w-full">
-      <Carousel
-        plugins={[plugin.current]}
-        className="w-full"
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
-        opts={{
-          loop: true,
-        }}
-      >
-        <CarouselContent>
-          {sliderImages.map((image) => (
-            <CarouselItem key={image.id}>
-              <Card className="overflow-hidden rounded-2xl border-4 border-primary bg-primary p-1 shadow-[0_0_40px_15px_hsl(var(--primary)/0.8)]">
-                <CardContent className="relative aspect-[2/1] overflow-hidden rounded-xl p-0 md:aspect-[4/1]">
+      <Card className="overflow-hidden rounded-2xl border-2 border-primary bg-primary p-1 shadow-[0_0_40px_15px_hsl(var(--primary)/0.8)]">
+        <Carousel
+          plugins={[plugin.current]}
+          className="w-full rounded-xl overflow-hidden"
+          onMouseEnter={plugin.current.stop}
+          onMouseLeave={plugin.current.reset}
+          opts={{
+            loop: true,
+          }}
+        >
+          <CarouselContent>
+            {sliderImages.map((image) => (
+              <CarouselItem key={image.id}>
+                <div className="relative aspect-[2/1] overflow-hidden p-0 md:aspect-[4/1]">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
@@ -57,14 +57,14 @@ const HeroSlider = () => {
                        Discover a vibrant community dedicated to learning and innovation.
                      </p>
                   </div>
-                </CardContent>
-              </Card>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="left-4" />
-        <CarouselNext className="right-4" />
-      </Carousel>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="left-4 z-10" />
+          <CarouselNext className="right-4 z-10" />
+        </Carousel>
+      </Card>
     </section>
   );
 };
