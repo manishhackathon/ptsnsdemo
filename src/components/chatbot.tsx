@@ -1,10 +1,23 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { MessagesSquare, Send, ChevronUp, ChevronDown } from 'lucide-react';
+import {
+  MessagesSquare,
+  Send,
+  ChevronUp,
+  ChevronDown,
+  FileText,
+} from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
+import Link from 'next/link';
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,15 +55,26 @@ const Chatbot = () => {
 
   if (!isOpen) {
     return (
-      <Button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-lg bg-gradient-to-r from-primary to-purple-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
-        aria-label="Open chatbot"
-      >
-        <MessagesSquare className="h-7 w-7" strokeWidth={2.25} />
-        <span className="font-medium">Chat With Us</span>
-        <ChevronUp className="h-6 w-6" strokeWidth={2.25} />
-      </Button>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+        <Button
+          asChild
+          className="flex items-center gap-3 rounded-lg bg-gradient-to-r from-pink-500 to-orange-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+        >
+          <Link href="#">
+            <FileText className="h-7 w-7" strokeWidth={2.25} />
+            <span className="font-medium">Abhilekh | FTS</span>
+          </Link>
+        </Button>
+        <Button
+          onClick={() => setIsOpen(true)}
+          className="flex items-center gap-3 rounded-lg bg-gradient-to-r from-primary to-purple-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+          aria-label="Open chatbot"
+        >
+          <MessagesSquare className="h-7 w-7" strokeWidth={2.25} />
+          <span className="font-medium">Chat With Us</span>
+          <ChevronUp className="h-6 w-6" strokeWidth={2.25} />
+        </Button>
+      </div>
     );
   }
 
@@ -61,7 +85,12 @@ const Chatbot = () => {
           <MessagesSquare className="h-7 w-7" strokeWidth={2.25} />
           <CardTitle className="font-headline text-lg">Chat with us</CardTitle>
         </div>
-        <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="h-8 w-8 hover:bg-primary/80">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => setIsOpen(false)}
+          className="h-8 w-8 hover:bg-primary/80"
+        >
           <ChevronDown className="h-6 w-6" strokeWidth={2.25} />
           <span className="sr-only">Collapse chat</span>
         </Button>
