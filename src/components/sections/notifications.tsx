@@ -67,27 +67,18 @@ const NotificationsSection = () => {
                 </Link>
               </div>
             </CardHeader>
-            <Separator className="w-full bg-primary" />
+            <Separator className="bg-primary" />
             <CardContent className="relative flex-1 overflow-hidden p-4 pt-4">
                 <div className="h-full overflow-hidden">
                     <div className="animate-marquee-up group-hover:[animation-play-state:paused]">
                         {[...card.notices, ...card.notices].map((notice, index) => {
-                             const date = parseISO(notice.date);
-                             const day = format(date, 'dd');
-                             const month = format(date, 'MMM').toUpperCase();
-                             const year = format(date, 'yy');
-
                              return (
-                             <Link href={notice.href} key={`${notice.id}-${index}`} className="mb-4 block rounded-md p-2 outline-none transition-colors hover:bg-accent/10 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                                <div className="flex items-start gap-3">
-                                  <div className="flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-md bg-primary p-1 leading-none text-primary-foreground">
-                                    <span className="text-lg font-bold">{day}</span>
-                                    <span className="text-[10px] font-medium">{month}</span>
-                                    <span className="text-xs font-medium">'{year}</span>
-                                  </div>
-                                  <p className="whitespace-normal pt-1 text-sm font-medium text-foreground/90">{notice.text}</p>
-                                </div>
-                            </Link>
+                               <Link href={notice.href} key={`${notice.id}-${index}`} className="mb-4 block rounded-md p-2 outline-none transition-colors hover:bg-accent/10 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                                  <p className="whitespace-normal text-sm font-medium text-foreground/90">{notice.text}</p>
+                                  <p className="mt-1 text-xs text-muted-foreground">
+                                    {format(parseISO(notice.date), 'PPP')}
+                                  </p>
+                              </Link>
                         )})}
                     </div>
                 </div>
