@@ -26,12 +26,12 @@ const Header = () => {
                     />
                   </div>
                 </Link>
-                <div className="text-left">
+                <div className="text-center">
                   <Link href="/">
                     <h1 className="font-headline text-3xl font-bold tracking-tight text-primary">
                       Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
                     </h1>
-                    <p className="font-hindi text-base font-bold text-primary/90">
+                    <p className="font-hindi text-2xl font-bold text-primary/90">
                       पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                     </p>
                   </Link>
@@ -70,7 +70,7 @@ const Header = () => {
                       />
                     </div>
                   </Link>
-                  <Link href="/">
+                  <Link href="/" className="pr-12 sm:pr-0">
                     <h1 className="font-headline text-sm font-bold tracking-tight text-primary sm:text-base">
                       Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
                     </h1>
