@@ -11,15 +11,6 @@ const Header = () => {
     <header className="relative w-full min-h-[160px] overflow-hidden bg-muted/50">
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
-          <div className="hidden shrink-0 lg:block">
-            <Image
-              src="/haldihands.png"
-              alt="Decorative hands with turmeric"
-              width={140}
-              height={140}
-              className="object-contain -rotate-12"
-            />
-          </div>
           <div className="inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl sm:px-6">
             <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3 lg:gap-6">
               <Link href="/">
@@ -60,15 +51,6 @@ const Header = () => {
                 <span>Email: ptsnsuniversity@gmail.com</span>
               </a>
             </div>
-          </div>
-          <div className="hidden shrink-0 lg:block">
-            <Image
-              src="/haldihands.png"
-              alt="Decorative hands with turmeric"
-              width={140}
-              height={140}
-              className="object-contain -scale-x-100 rotate-12"
-            />
           </div>
         </div>
         <div className="mt-2 flex w-full justify-end px-2 sm:mt-3">
