@@ -13,12 +13,12 @@ const Chatbot = () => {
     return (
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-lg bg-primary px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-3 rounded-lg bg-primary px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
         aria-label="Open chatbot"
       >
-        <MessagesSquare className="h-6 w-6" />
+        <MessagesSquare className="h-7 w-7" strokeWidth={2.25} />
         <span className="font-medium">Chat With Us</span>
-        <ChevronUp className="h-5 w-5" />
+        <ChevronUp className="h-6 w-6" strokeWidth={2.25} />
       </Button>
     );
   }
@@ -27,11 +27,11 @@ const Chatbot = () => {
     <Card className="fixed bottom-6 right-6 z-50 w-80 rounded-2xl shadow-2xl">
       <CardHeader className="flex flex-row items-center justify-between rounded-t-2xl bg-primary p-4 text-primary-foreground">
         <div className="flex items-center gap-3">
-          <MessagesSquare className="h-6 w-6" />
+          <MessagesSquare className="h-7 w-7" strokeWidth={2.25} />
           <CardTitle className="font-headline text-lg">Chat with us</CardTitle>
         </div>
         <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="h-8 w-8 hover:bg-primary/80">
-          <ChevronDown className="h-5 w-5" />
+          <ChevronDown className="h-6 w-6" strokeWidth={2.25} />
           <span className="sr-only">Collapse chat</span>
         </Button>
       </CardHeader>
@@ -40,7 +40,7 @@ const Chatbot = () => {
         <div className="flex flex-col gap-3">
           <div className="flex items-start gap-2">
             <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-accent-foreground">
-              <MessagesSquare size={20} />
+              <MessagesSquare size={24} strokeWidth={2.25} />
             </div>
             <div className="max-w-[80%] rounded-lg bg-muted p-3 text-sm">
               Hello! How can I help you today?
