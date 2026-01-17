@@ -12,7 +12,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-muted/50 backdrop-blur-sm xl:relative xl:min-h-[160px] xl:bg-transparent xl:backdrop-blur-none">
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
-          <div className="w-full rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl">
+          <div className="inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl">
             {/* Desktop Header */}
             <div className="hidden xl:block">
               <div className="flex flex-col items-center justify-center gap-6 text-center">
@@ -58,7 +58,7 @@ const Header = () => {
 
             {/* Mobile/Tablet Header */}
             <div className="xl:hidden">
-              <div className="flex items-center justify-between gap-3 text-left sm:relative sm:justify-center">
+              <div className="flex items-center justify-between gap-3 text-left sm:relative sm:justify-center sm:gap-4 sm:text-center">
                 <div className="flex items-center gap-3 sm:gap-4">
                   <Link href="/">
                     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14">
