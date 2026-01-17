@@ -26,20 +26,21 @@ const HeroSlider = () => {
 
   return (
     <section className="w-full">
-      <Card className="overflow-hidden rounded-2xl border-[3px] border-primary bg-primary p-1 shadow-[0_0_20px_5px_hsl(var(--primary)/0.5)]">
+      <Card className="overflow-hidden rounded-2xl border-2 border-primary p-1 shadow-[0_0_20px_2px_hsl(var(--primary)/0.5)]">
         <Carousel
           plugins={[plugin.current]}
-          className="w-full rounded-xl overflow-hidden"
+          className="w-full overflow-hidden rounded-xl"
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
           opts={{
             loop: true,
+            align: 'start',
           }}
         >
           <CarouselContent>
             {sliderImages.map((image) => (
-              <CarouselItem key={image.id}>
-                <div className="relative aspect-[2/1] overflow-hidden p-0 md:aspect-[4/1]">
+              <CarouselItem key={image.id} className="md:basis-1/2">
+                <div className="relative aspect-[2/1] overflow-hidden p-0">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
