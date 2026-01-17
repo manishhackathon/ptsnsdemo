@@ -134,7 +134,7 @@ export const MobileNav = () => {
           <SheetHeader className="p-6 text-left border-b">
             <SheetTitle>
               <Link href="/" onClick={() => setIsOpen(false)} className="font-headline text-lg font-bold text-primary">
-                P.S.N.S. Vishwavidyalaya
+                P.T.S.N.S University
               </Link>
             </SheetTitle>
           </SheetHeader>
