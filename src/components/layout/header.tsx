@@ -58,25 +58,27 @@ const Header = () => {
 
             {/* Mobile/Tablet Header */}
             <div className="xl:hidden">
-              <div className="flex items-center justify-between gap-3 text-left">
-                  <div className="flex items-center gap-3">
-                      <Link href="/">
-                        <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
-                          <Image
-                            src="/university.jpg"
-                            alt="University Logo"
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                      </Link>
-                      <Link href="/">
-                        <h1 className="font-headline text-base font-bold tracking-tight text-primary">
-                          Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
-                        </h1>
-                      </Link>
-                  </div>
+              <div className="flex items-center justify-between gap-3 text-left sm:relative sm:justify-center">
+                <div className="flex items-center gap-3">
+                  <Link href="/">
+                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
+                      <Image
+                        src="/university.jpg"
+                        alt="University Logo"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                  </Link>
+                  <Link href="/">
+                    <h1 className="font-headline text-sm font-bold tracking-tight text-primary sm:text-base">
+                      Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
+                    </h1>
+                  </Link>
+                </div>
+                <div className="sm:absolute sm:right-0">
                   <MobileNav />
+                </div>
               </div>
               <div className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 border-t border-border pt-2 text-[10px] text-foreground/80 sm:text-xs">
                 <a
