@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Home, Info, Users, ClipboardSignature, GraduationCap, FlaskConical, Laugh, Megaphone, Globe, Image as ImageIcon, ChevronDown, Menu } from 'lucide-react';
+import { Home, Info, Users, ClipboardSignature, GraduationCap, FlaskConical, Smile, Megaphone, Globe, Image as ImageIcon, ChevronDown, Menu } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -61,7 +61,7 @@ const navLinks = [
   },
   { 
     label: 'Student Life',
-    icon: Laugh,
+    icon: Smile,
     subLinks: [
         { href: '#', label: 'Campus Life' },
         { href: '#', label: 'Hostels' },
