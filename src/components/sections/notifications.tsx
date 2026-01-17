@@ -7,7 +7,7 @@ const notificationCards = [
     title: 'Student Notifications',
     icon: Bell,
     href: '#',
-    gradientClasses: 'bg-gradient-to-br from-cyan-400 to-blue-600',
+    gradientClasses: 'bg-gradient-to-br from-blue-500 to-pink-500',
     notices: [
       { id: 1, text: 'Semester exam timetable for all UG/PG courses has been released.', date: '2024-07-25', href: '#' },
       { id: 2, text: 'Library will remain open 24/7 during the examination period.', date: '2024-07-24', href: '#' },
@@ -21,7 +21,7 @@ const notificationCards = [
     title: 'University Circulars',
     icon: FileText,
     href: '#',
-    gradientClasses: 'bg-gradient-to-br from-purple-400 to-violet-600',
+    gradientClasses: 'bg-gradient-to-br from-pink-300 to-red-500',
     notices: [
       { id: 1, text: 'Circular regarding new academic calendar for 2024-25 session.', date: '2024-07-23', href: '#' },
       { id: 2, text: 'Guidelines for Ph.D. admissions process for the upcoming year.', date: '2024-07-22', href: '#' },
@@ -35,7 +35,7 @@ const notificationCards = [
     title: 'Recruitment',
     icon: Briefcase,
     href: '#',
-    gradientClasses: 'bg-gradient-to-br from-orange-400 to-red-500',
+    gradientClasses: 'bg-gradient-to-br from-orange-400 to-pink-300',
     notices: [
       { id: 1, text: 'Opening for Assistant Professor in Computer Science department.', date: '2024-07-25', href: '#' },
       { id: 2, text: 'Walk-in interview for the post of Lab Assistant on Aug 2nd.', date: '2024-07-24', href: '#' },
@@ -63,8 +63,7 @@ const NotificationsSection = () => {
                 </CardTitle>
               </Link>
             </CardHeader>
-            <CardContent className="relative flex-1 overflow-hidden bg-primary/5 pt-0">
-              <div className="absolute inset-x-0 top-0 z-10 h-6 bg-gradient-to-b from-primary/5 to-transparent" />
+            <CardContent className="relative flex-1 overflow-hidden pt-0">
                 <div className="h-full overflow-hidden">
                     <div className="animate-marquee-up group-hover:[animation-play-state:paused]">
                         {[...card.notices, ...card.notices].map((notice, index) => (
@@ -75,7 +74,6 @@ const NotificationsSection = () => {
                         ))}
                     </div>
                 </div>
-              <div className="absolute inset-x-0 bottom-0 z-10 h-6 bg-gradient-to-t from-primary/5 to-transparent" />
             </CardContent>
           </Card>
         ))}
