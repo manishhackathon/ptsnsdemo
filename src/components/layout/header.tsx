@@ -9,10 +9,10 @@ import { MobileNav } from './navbar';
 
 const Header = () => {
   return (
-    <header className="relative w-full min-h-[160px] overflow-hidden bg-muted/50">
+    <header className="sticky top-0 z-50 w-full bg-muted/50 xl:relative xl:min-h-[160px]">
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
-          <div className="relative inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl sm:px-6">
+          <div className="relative inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl sm:px-6 sm:pr-12 xl:pr-0">
             <div className="absolute right-2 top-2 xl:hidden">
               <MobileNav />
             </div>
