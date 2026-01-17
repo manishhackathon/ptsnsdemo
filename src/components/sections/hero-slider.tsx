@@ -26,7 +26,7 @@ const HeroSlider = () => {
 
   return (
     <section className="w-full">
-      <Card className="overflow-hidden rounded-2xl border-2 border-primary p-1 shadow-[0_0_20px_2px_hsl(var(--primary)/0.5)]">
+      <Card className="overflow-hidden rounded-2xl border-2 border-primary p-1 shadow-lg shadow-primary/20">
         <Carousel
           plugins={[plugin.current]}
           className="w-full overflow-hidden rounded-xl"
@@ -37,9 +37,9 @@ const HeroSlider = () => {
             align: 'start',
           }}
         >
-          <CarouselContent>
+          <CarouselContent className="-ml-px">
             {sliderImages.map((image) => (
-              <CarouselItem key={image.id} className="md:basis-1/2">
+              <CarouselItem key={image.id} className="pl-px md:basis-1/2">
                 <div className="relative aspect-[2/1] overflow-hidden p-0">
                   <Image
                     src={image.imageUrl}
