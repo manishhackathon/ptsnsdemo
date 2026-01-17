@@ -72,40 +72,40 @@ const Header = () => {
           </div>
         </div>
         <div className="mt-2 flex w-full justify-end px-2 sm:mt-3">
-          <div className="flex w-full max-w-lg items-center gap-2 lg:max-w-2xl">
+          <div className="flex w-full max-w-sm items-center gap-2 lg:max-w-md">
             <div className="relative flex-grow">
               <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
-                <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+                <Search className="absolute left-3 top-1/2 h-3 w-3 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   placeholder="Search courses, notices, faculty..."
-                  className="h-7 w-full rounded-full border-0 bg-white pl-10 pr-10 text-xs transition-colors focus-visible:outline-none focus-visible:ring-0 sm:h-8"
+                  className="h-6 w-full rounded-full border-0 bg-white pl-8 pr-8 text-xs transition-colors focus-visible:outline-none focus-visible:ring-0 sm:h-7"
                 />
                 <Button
                   size="icon"
-                  className="absolute right-1 top-1/2 h-5 w-5 -translate-y-1/2 rounded-full bg-gradient-to-r from-accent to-primary text-white transition-opacity hover:opacity-90 sm:h-6 sm:w-6"
+                  className="absolute right-0.5 top-1/2 h-5 w-5 -translate-y-1/2 rounded-full bg-gradient-to-r from-accent to-primary text-white transition-opacity hover:opacity-90 sm:h-6 sm:w-6"
                 >
-                  <Search className="h-3 w-3" />
+                  <Search className="h-2 w-2 sm:h-3 sm:w-3" />
                 </Button>
               </div>
             </div>
             <div className="flex shrink-0 items-center gap-1">
               <Button
                 variant="outline"
-                className="h-7 w-7 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
+                className="h-6 w-6 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10 sm:h-7 sm:w-7"
               >
-                <span className="text-xs">A-</span>
+                <span className="text-[10px] sm:text-xs">A-</span>
               </Button>
               <Button
                 variant="outline"
-                className="h-7 w-7 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
+                className="h-6 w-6 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10 sm:h-7 sm:w-7"
               >
-                <span className="text-xs">A</span>
+                <span className="text-[10px] sm:text-xs">A</span>
               </Button>
               <Button
                 variant="outline"
-                className="h-7 w-7 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
+                className="h-6 w-6 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10 sm:h-7 sm:w-7"
               >
-                <span className="text-xs">A+</span>
+                <span className="text-[10px] sm:text-xs">A+</span>
               </Button>
             </div>
           </div>
