@@ -90,7 +90,7 @@ const NavMenu = () => (
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
-              className="flex items-center gap-1.5 px-1 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
+              className="flex items-center gap-1.5 px-1 py-2 text-base font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
             >
               <link.icon className="h-4 w-4" />
               <span className="whitespace-nowrap">{link.label}</span> <ChevronDown className="h-4 w-4" />
@@ -108,7 +108,7 @@ const NavMenu = () => (
         <Link
           key={link.label}
           href={link.href || '#'}
-          className="flex items-center gap-1.5 rounded-md px-1 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
+          className="flex items-center gap-1.5 rounded-md px-1 py-2 text-base font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
         >
           <link.icon className="h-4 w-4" />
           <span className="whitespace-nowrap">{link.label}</span>
@@ -122,7 +122,7 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="rounded-md border border-primary/50 xl:hidden">
+    <div className="rounded-md border border-primary xl:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/10 hover:text-primary">
@@ -183,9 +183,9 @@ const MobileNav = () => {
 
 const NavBar = () => {
     return (
-        <div className="sticky top-0 z-40 w-full bg-muted">
-            <div className="flex h-16 items-center justify-end px-4 xl:justify-center">
-                <div className="hidden w-full justify-center xl:flex items-center h-14 px-2 bg-white rounded-lg border border-border shadow-lg">
+        <div className="sticky top-0 z-40 w-full bg-muted py-1">
+            <div className="flex h-14 w-full items-center justify-end px-4 xl:justify-center">
+                <div className="hidden h-full w-full items-center justify-center rounded-lg border border-primary bg-white px-2 shadow-lg xl:flex">
                     <NavMenu />
                 </div>
                 <MobileNav />
