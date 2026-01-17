@@ -24,13 +24,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased">
-        <div
-          className="fixed inset-0 z-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/body.png')",
-          }}
-        />
+      <body className="font-body antialiased bg-white">
         <div className="relative z-10 mx-auto flex min-h-screen max-w-[95%] flex-col border border-accent/50 bg-muted shadow-2xl">
           <Header />
           <NewsTicker />
