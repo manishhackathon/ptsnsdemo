@@ -63,20 +63,20 @@ const ContactSection = () => {
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <div className="space-y-2">
                   <Label htmlFor="firstName">First Name</Label>
-                  <Input id="firstName" placeholder="John" />
+                  <Input id="firstName" placeholder="John" className="bg-white text-primary placeholder:text-primary/50" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="lastName">Last Name</Label>
-                  <Input id="lastName" placeholder="Doe" />
+                  <Input id="lastName" placeholder="Doe" className="bg-white text-primary placeholder:text-primary/50" />
                 </div>
               </div>
               <div className="space-y-2">
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="john.doe@example.com" />
+                <Input id="email" type="email" placeholder="john.doe@example.com" className="bg-white text-primary placeholder:text-primary/50" />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="Your message here..." />
+                <Textarea id="message" placeholder="Your message here..." className="bg-white text-primary placeholder:text-primary/50" />
               </div>
               <Button type="submit" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
                 Submit
