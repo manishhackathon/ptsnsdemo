@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ChevronDown, Menu } from 'lucide-react';
+import { Home, Info, Users, ClipboardSignature, GraduationCap, FlaskConical, Laugh, Megaphone, Globe, Image as ImageIcon, ChevronDown, Menu } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,9 +13,10 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
+  { href: '/', label: 'Home', icon: Home },
   { 
     label: 'About Us',
+    icon: Info,
     subLinks: [
       { href: '#', label: 'About the University' },
       { href: '#', label: 'Vision & Mission' },
@@ -24,6 +25,7 @@ const navLinks = [
   },
   { 
     label: 'Administration',
+    icon: Users,
     subLinks: [
       { href: '#', label: 'Chancellor' },
       { href: '#', label: 'Vice Chancellor' },
@@ -32,6 +34,7 @@ const navLinks = [
   },
   { 
     label: 'Admission and Fee',
+    icon: ClipboardSignature,
     subLinks: [
         { href: '#', label: 'Admission Process' },
         { href: '#', label: 'Fee Structure' },
@@ -40,6 +43,7 @@ const navLinks = [
   },
   { 
     label: 'Academics',
+    icon: GraduationCap,
     subLinks: [
         { href: '#', label: 'Faculties' },
         { href: '#', label: 'Departments' },
@@ -48,6 +52,7 @@ const navLinks = [
   },
   { 
     label: 'Research',
+    icon: FlaskConical,
     subLinks: [
         { href: '#', label: 'Research Policies' },
         { href: '#', label: 'Publications' },
@@ -56,6 +61,7 @@ const navLinks = [
   },
   { 
     label: 'Student Life',
+    icon: Laugh,
     subLinks: [
         { href: '#', label: 'Campus Life' },
         { href: '#', label: 'Hostels' },
@@ -64,14 +70,15 @@ const navLinks = [
   },
   { 
     label: 'Information Corner',
+    icon: Megaphone,
     subLinks: [
         { href: '#', label: 'News & Events' },
         { href: '#', label: 'Notices' },
         { href: '#', label: 'Tenders' },
     ]
   },
-  { href: '#', label: 'Online Services' },
-  { href: '#', label: 'Event Gallery' },
+  { href: '#', label: 'Online Services', icon: Globe },
+  { href: '#', label: 'Event Gallery', icon: ImageIcon },
 ];
 
 
@@ -83,9 +90,10 @@ const NavMenu = () => (
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
-              className="flex items-center gap-1 px-3 py-2 text-sm font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
+              className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
             >
-              {link.label} <ChevronDown className="h-4 w-4" />
+              <link.icon className="h-4 w-4" />
+              <span>{link.label}</span> <ChevronDown className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56 bg-card/80 backdrop-blur">
@@ -100,9 +108,10 @@ const NavMenu = () => (
         <Link
           key={link.label}
           href={link.href || '#'}
-          className="rounded-md px-3 py-2 text-sm font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
+          className="flex items-center gap-1.5 rounded-md px-3 py-2 text-xs font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
         >
-          {link.label}
+          <link.icon className="h-4 w-4" />
+          <span>{link.label}</span>
         </Link>
       )
     ))}
@@ -135,12 +144,15 @@ const MobileNav = () => {
                 if (link.subLinks) {
                   return (
                     <div key={link.label} className="flex flex-col space-y-2">
-                      <p className="font-semibold text-foreground/80">{link.label}</p>
+                       <p className="font-semibold text-foreground/80 flex items-center gap-2">
+                        <link.icon className="h-4 w-4 text-[#BA55D3]" />
+                        {link.label}
+                      </p>
                       {link.subLinks.map(sublink => (
                          <Link
                           key={sublink.label}
                           href={sublink.href}
-                          className="pl-4 text-base font-medium text-foreground/70 transition-colors hover:text-[#BA55D3]"
+                          className="pl-8 text-base font-medium text-foreground/70 transition-colors hover:text-[#BA55D3]"
                           onClick={() => setIsOpen(false)}
                         >
                           {sublink.label}
@@ -153,9 +165,10 @@ const MobileNav = () => {
                    <Link
                     key={link.label}
                     href={link.href!}
-                    className="text-base font-medium text-foreground/80 transition-colors hover:text-[#BA55D3]"
+                    className="flex items-center gap-2 text-base font-medium text-foreground/80 transition-colors hover:text-[#BA55D3]"
                     onClick={() => setIsOpen(false)}
                   >
+                    <link.icon className="h-4 w-4 text-[#BA55D3]" />
                     {link.label}
                   </Link>
                 )
@@ -170,9 +183,11 @@ const MobileNav = () => {
 
 const NavBar = () => {
     return (
-        <div className="sticky top-0 z-40 w-full bg-white xl:border-y xl:border-[#BA55D3]/20">
-            <div className="container mx-auto flex h-14 items-center justify-end px-4 xl:justify-center">
-                <NavMenu />
+        <div className="sticky top-0 z-40 w-full bg-muted">
+            <div className="container mx-auto flex h-16 items-center justify-end px-4 xl:justify-center">
+                <div className="hidden xl:flex items-center h-14 px-4 bg-white rounded-full border border-[#BA55D3]/20 shadow-lg">
+                    <NavMenu />
+                </div>
                 <MobileNav />
             </div>
         </div>
