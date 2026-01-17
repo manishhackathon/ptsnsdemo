@@ -24,8 +24,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans+Devanagari:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </head>
-      <body className="font-body antialiased bg-background">
-        <div className="relative z-10 mx-auto flex min-h-screen max-w-[95%] flex-col border border-accent/50 bg-muted shadow-2xl">
+      <body className="font-body antialiased bg-background py-4">
+        <div className="relative z-10 mx-auto flex min-h-screen max-w-[95%] flex-col border border-accent/50 bg-muted shadow-2xl shadow-[hsl(var(--primary)/0.15)]">
           <Header />
           <NewsTicker />
           <NavBar />
