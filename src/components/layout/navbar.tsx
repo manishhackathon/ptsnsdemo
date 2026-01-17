@@ -90,7 +90,7 @@ const NavMenu = () => (
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
-              className="flex items-center gap-1.5 px-2 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
+              className="flex items-center gap-1.5 px-1 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
             >
               <link.icon className="h-4 w-4" />
               <span className="whitespace-nowrap">{link.label}</span> <ChevronDown className="h-4 w-4" />
@@ -108,7 +108,7 @@ const NavMenu = () => (
         <Link
           key={link.label}
           href={link.href || '#'}
-          className="flex items-center gap-1.5 rounded-md px-2 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
+          className="flex items-center gap-1.5 rounded-md px-1 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
         >
           <link.icon className="h-4 w-4" />
           <span className="whitespace-nowrap">{link.label}</span>
@@ -184,8 +184,8 @@ const MobileNav = () => {
 const NavBar = () => {
     return (
         <div className="sticky top-0 z-40 w-full bg-muted">
-            <div className="container mx-auto flex h-16 items-center justify-end px-4 xl:justify-center">
-                <div className="hidden xl:flex items-center h-14 px-4 bg-white rounded-lg border border-border shadow-lg">
+            <div className="flex h-16 items-center justify-end px-4 xl:justify-center">
+                <div className="hidden w-full justify-center xl:flex items-center h-14 px-2 bg-white rounded-lg border border-border shadow-lg">
                     <NavMenu />
                 </div>
                 <MobileNav />
