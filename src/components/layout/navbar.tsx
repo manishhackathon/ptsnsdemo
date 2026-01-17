@@ -83,14 +83,14 @@ const navLinks = [
 
 
 const NavMenu = () => (
-  <nav className="hidden items-center space-x-1 xl:flex">
+  <nav className="hidden items-center xl:flex">
     {navLinks.map((link) => (
       link.subLinks ? (
         <DropdownMenu key={link.label}>
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
-              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
+              className="flex items-center gap-1.5 px-2 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
             >
               <link.icon className="h-4 w-4" />
               <span className="whitespace-nowrap">{link.label}</span> <ChevronDown className="h-4 w-4" />
@@ -108,7 +108,7 @@ const NavMenu = () => (
         <Link
           key={link.label}
           href={link.href || '#'}
-          className="flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
+          className="flex items-center gap-1.5 rounded-md px-2 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
         >
           <link.icon className="h-4 w-4" />
           <span className="whitespace-nowrap">{link.label}</span>
