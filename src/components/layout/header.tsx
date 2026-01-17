@@ -5,12 +5,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import HeaderBackground from './header-background';
 
 const Header = () => {
   return (
     <header className="relative w-full min-h-[180px] overflow-hidden">
-      <HeaderBackground />
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
           <div className="rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl sm:px-6 lg:w-full">
