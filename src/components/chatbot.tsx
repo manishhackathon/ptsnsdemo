@@ -60,7 +60,7 @@ const Chatbot = () => {
           asChild
           className="flex items-center justify-center gap-3 rounded-lg bg-gradient-to-r from-pink-500 to-orange-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
         >
-          <Link href="#">
+          <Link href="https://abhilekh-murex.vercel.app/" target="_blank" rel="noopener noreferrer">
             <FileText className="h-7 w-7" strokeWidth={2.25} />
             <span className="font-medium">Abhilekh | FTS</span>
           </Link>
