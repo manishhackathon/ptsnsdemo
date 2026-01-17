@@ -90,7 +90,7 @@ const NavMenu = () => (
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
-              className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
+              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
             >
               <link.icon className="h-4 w-4" />
               <span className="whitespace-nowrap">{link.label}</span> <ChevronDown className="h-4 w-4" />
@@ -108,7 +108,7 @@ const NavMenu = () => (
         <Link
           key={link.label}
           href={link.href || '#'}
-          className="flex items-center gap-1.5 rounded-md px-3 py-2 text-xs font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
+          className="flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
         >
           <link.icon className="h-4 w-4" />
           <span className="whitespace-nowrap">{link.label}</span>
