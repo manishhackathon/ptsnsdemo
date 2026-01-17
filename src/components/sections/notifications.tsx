@@ -7,6 +7,7 @@ const notificationCards = [
     title: 'Student Notifications',
     icon: Bell,
     href: '#',
+    gradientClasses: 'bg-gradient-to-br from-cyan-400 to-blue-600',
     notices: [
       { id: 1, text: 'Semester exam timetable for all UG/PG courses has been released.', date: '2024-07-25', href: '#' },
       { id: 2, text: 'Library will remain open 24/7 during the examination period.', date: '2024-07-24', href: '#' },
@@ -20,6 +21,7 @@ const notificationCards = [
     title: 'University Circulars',
     icon: FileText,
     href: '#',
+    gradientClasses: 'bg-gradient-to-br from-purple-400 to-violet-600',
     notices: [
       { id: 1, text: 'Circular regarding new academic calendar for 2024-25 session.', date: '2024-07-23', href: '#' },
       { id: 2, text: 'Guidelines for Ph.D. admissions process for the upcoming year.', date: '2024-07-22', href: '#' },
@@ -33,6 +35,7 @@ const notificationCards = [
     title: 'Recruitment',
     icon: Briefcase,
     href: '#',
+    gradientClasses: 'bg-gradient-to-br from-orange-400 to-red-500',
     notices: [
       { id: 1, text: 'Opening for Assistant Professor in Computer Science department.', date: '2024-07-25', href: '#' },
       { id: 2, text: 'Walk-in interview for the post of Lab Assistant on Aug 2nd.', date: '2024-07-24', href: '#' },
@@ -51,8 +54,8 @@ const NotificationsSection = () => {
         {notificationCards.map((card) => (
           <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden rounded-lg border border-primary/30 shadow-xl shadow-primary/20 transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/30">
             <CardHeader className="flex-row items-center gap-4">
-              <div className="flex-shrink-0 rounded-lg bg-primary/10 p-3">
-                <card.icon className="h-8 w-8 text-primary" />
+              <div className={`flex-shrink-0 rounded-lg p-3 ${card.gradientClasses}`}>
+                <card.icon className="h-8 w-8 text-white" />
               </div>
               <Link href={card.href} className="outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md">
                 <CardTitle className="font-headline text-lg font-semibold text-primary/90 hover:underline">
@@ -60,19 +63,19 @@ const NotificationsSection = () => {
                 </CardTitle>
               </Link>
             </CardHeader>
-            <CardContent className="relative flex-1 overflow-hidden pt-0">
-              <div className="absolute inset-x-0 top-0 z-10 h-6 bg-gradient-to-b from-card to-transparent" />
+            <CardContent className="relative flex-1 overflow-hidden bg-primary/5 pt-0">
+              <div className="absolute inset-x-0 top-0 z-10 h-6 bg-gradient-to-b from-primary/5 to-transparent" />
                 <div className="h-full overflow-hidden">
                     <div className="animate-marquee-up group-hover:[animation-play-state:paused]">
                         {[...card.notices, ...card.notices].map((notice, index) => (
-                             <Link href={notice.href} key={`${notice.id}-${index}`} className="mb-4 block rounded-md border-b border-border/50 pb-4 p-2 outline-none transition-colors hover:bg-accent/50 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
-                                <p className="text-sm font-medium text-foreground/90 whitespace-normal">{notice.text}</p>
+                             <Link href={notice.href} key={`${notice.id}-${index}`} className="mb-4 block rounded-md border-b border-border/50 p-2 pb-4 outline-none transition-colors hover:bg-accent/10 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                                <p className="whitespace-normal text-sm font-medium text-foreground/90">{notice.text}</p>
                                 <p className="mt-1 text-xs text-muted-foreground">{notice.date}</p>
                             </Link>
                         ))}
                     </div>
                 </div>
-              <div className="absolute inset-x-0 bottom-0 z-10 h-6 bg-gradient-to-t from-card to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 z-10 h-6 bg-gradient-to-t from-primary/5 to-transparent" />
             </CardContent>
           </Card>
         ))}
