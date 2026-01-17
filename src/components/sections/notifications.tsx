@@ -78,7 +78,7 @@ const NotificationsSection = () => {
                              return (
                                <Link href={notice.href} key={`${notice.id}-${index}`} className="mb-3 block rounded-lg bg-muted p-3 outline-none transition-colors hover:bg-muted/90 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                                   <p className="whitespace-normal text-sm font-medium text-foreground/90">{notice.text}</p>
-                                  <p className="mt-1.5 text-xs font-semibold text-primary">
+                                  <p className="mt-1.5 text-right text-xs font-semibold text-primary">
                                     {format(parseISO(notice.date), 'PPP')}
                                   </p>
                               </Link>
