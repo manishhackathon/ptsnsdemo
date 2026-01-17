@@ -17,7 +17,7 @@ const Header = () => {
               alt="Decorative hands with turmeric"
               width={140}
               height={140}
-              className="object-contain"
+              className="object-contain -rotate-12"
             />
           </div>
           <div className="inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl sm:px-6">
@@ -37,7 +37,7 @@ const Header = () => {
                   <h1 className="font-headline text-base font-bold tracking-tight text-primary sm:text-lg md:text-xl lg:text-3xl">
                     Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                   </h1>
-                  <p className="font-hindi text-base font-bold text-primary/90 sm:text-base md:text-lg">
+                  <p className="font-hindi text-sm font-bold text-primary/90 sm:text-base md:text-base">
                     पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                   </p>
                 </Link>
@@ -67,7 +67,7 @@ const Header = () => {
               alt="Decorative hands with turmeric"
               width={140}
               height={140}
-              className="object-contain -scale-x-100"
+              className="object-contain -scale-x-100 rotate-12"
             />
           </div>
         </div>
