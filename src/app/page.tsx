@@ -6,7 +6,7 @@ import HeroSlider from '@/components/sections/hero-slider';
 
 export default function Home() {
   return (
-    <div className="px-4 py-8">
+    <div className="px-4 py-2">
       <div className="flex flex-col gap-16 md:gap-24">
         <HeroSlider />
         <AboutUsSection />
