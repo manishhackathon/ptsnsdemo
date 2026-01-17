@@ -1,8 +1,9 @@
+
 'use client';
 
 import * as React from 'react';
 import Image from 'next/image';
-import { Card, CardContent } from '@/components/ui/card';
+import { Card } from '@/components/ui/card';
 import {
   Carousel,
   CarouselContent,
@@ -17,7 +18,7 @@ const HeroSlider = () => {
   const sliderImages = PlaceHolderImages.filter((img) => img.id.startsWith('slider-'));
 
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: true })
+    Autoplay({ delay: 2000, stopOnInteraction: true })
   );
 
   if (sliderImages.length === 0) {
@@ -26,46 +27,50 @@ const HeroSlider = () => {
 
   return (
     <section className="w-full">
-      <Card className="overflow-hidden rounded-2xl border-2 border-primary p-1 shadow-lg shadow-primary/10">
-        <Carousel
-          plugins={[plugin.current]}
-          className="w-full overflow-hidden rounded-xl"
-          onMouseEnter={plugin.current.stop}
-          onMouseLeave={plugin.current.reset}
-          opts={{
-            loop: true,
-            align: 'start',
-          }}
-        >
-          <CarouselContent className="-ml-px">
-            {sliderImages.map((image) => (
-              <CarouselItem key={image.id} className="pl-px md:basis-1/2">
-                <div className="relative aspect-[2/1] overflow-hidden p-0">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    fill
-                    className="object-cover"
-                    priority={sliderImages.indexOf(image) === 0}
-                    data-ai-hint={image.imageHint}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-0 left-0 p-4 md:p-6">
-                     <h2 className="font-headline text-lg font-bold text-white sm:text-xl md:text-2xl">
-                       {image.title || 'Excellence in Education, Rooted in Heritage'}
-                     </h2>
-                     <p className="mt-1 max-w-xl text-xs text-white/90 md:text-sm">
-                       {image.subtitle || 'Discover a vibrant community dedicated to learning and innovation.'}
-                     </p>
+      <div className="rounded-2xl p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+        <Card className="overflow-hidden rounded-xl border-2 border-primary">
+          <Carousel
+            plugins={[plugin.current]}
+            className="w-full"
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
+            opts={{
+              loop: true,
+              align: 'start',
+            }}
+          >
+            <CarouselContent className="-ml-px">
+              {sliderImages.map((image, index) => (
+                <CarouselItem key={image.id} className="pl-px md:basis-1/2">
+                  <div className="relative aspect-[2/1] overflow-hidden">
+                    <Image
+                      src={image.imageUrl}
+                      alt={image.description}
+                      fill
+                      className="object-cover"
+                      priority={index === 0}
+                      data-ai-hint={image.imageHint}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <div className="absolute bottom-0 left-0 p-4 md:p-6">
+                      <h2 className="font-headline text-lg font-bold text-white sm:text-xl md:text-2xl">
+                        {image.title ||
+                          'Excellence in Education, Rooted in Heritage'}
+                      </h2>
+                      <p className="mt-1 max-w-xl text-xs text-white/90 md:text-sm">
+                        {image.subtitle ||
+                          'Discover a vibrant community dedicated to learning and innovation.'}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-4 z-10" />
-          <CarouselNext className="right-4 z-10" />
-        </Carousel>
-      </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4 z-10" />
+            <CarouselNext className="right-4 z-10" />
+          </Carousel>
+        </Card>
+      </div>
     </section>
   );
 };
