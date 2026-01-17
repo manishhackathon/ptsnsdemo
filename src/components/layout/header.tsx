@@ -59,9 +59,9 @@ const Header = () => {
             {/* Mobile/Tablet Header */}
             <div className="xl:hidden">
               <div className="flex items-center justify-between gap-3 text-left sm:relative sm:justify-center">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 sm:gap-4">
                   <Link href="/">
-                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
+                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14">
                       <Image
                         src="/university.jpg"
                         alt="University Logo"
