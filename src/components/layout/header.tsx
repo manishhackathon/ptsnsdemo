@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 
 const Header = () => {
   return (
-    <header className="relative w-full min-h-[180px] overflow-hidden">
+    <header className="relative w-full min-h-[180px] overflow-hidden bg-muted/50">
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
           <div className="rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl sm:px-6 lg:w-full">
@@ -28,7 +28,7 @@ const Header = () => {
                   <h1 className="font-headline text-base font-bold tracking-tight text-primary sm:text-lg md:text-xl lg:text-3xl">
                     Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                   </h1>
-                  <p className="font-hindi text-lg font-bold text-primary/90 sm:text-base md:text-lg lg:text-3xl">
+                  <p className="font-hindi text-lg font-bold text-primary/90 sm:text-base md:text-lg lg:text-xl">
                     पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                   </p>
                 </Link>
