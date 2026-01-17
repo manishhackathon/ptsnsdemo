@@ -55,10 +55,10 @@ const Chatbot = () => {
 
   if (!isOpen) {
     return (
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
+      <div className="fixed bottom-6 right-6 z-50 grid gap-2">
         <Button
           asChild
-          className="flex items-center gap-3 rounded-lg bg-gradient-to-r from-pink-500 to-orange-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+          className="flex items-center justify-center gap-3 rounded-lg bg-gradient-to-r from-pink-500 to-orange-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
         >
           <Link href="#">
             <FileText className="h-7 w-7" strokeWidth={2.25} />
@@ -67,7 +67,7 @@ const Chatbot = () => {
         </Button>
         <Button
           onClick={() => setIsOpen(true)}
-          className="flex items-center gap-3 rounded-lg bg-gradient-to-r from-primary to-purple-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+          className="flex items-center justify-center gap-3 rounded-lg bg-gradient-to-r from-primary to-purple-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
           aria-label="Open chatbot"
         >
           <MessagesSquare className="h-7 w-7" strokeWidth={2.25} />
