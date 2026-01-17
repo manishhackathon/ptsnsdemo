@@ -12,7 +12,7 @@ const newsItems = [
 const NewsTicker = () => {
   return (
     <div className="my-1 px-4">
-      <div className="group flex h-7 w-full items-center overflow-hidden rounded-sm border border-primary bg-white shadow-lg">
+      <div className="group flex h-6 w-full items-center overflow-hidden rounded-sm border border-primary bg-white shadow-lg">
         <div className="flex h-full flex-shrink-0 items-center gap-2 border-r border-border bg-gradient-to-r from-pink-500 to-purple-500 px-3 text-primary-foreground">
           <Megaphone className="h-4 w-4" />
           <span className="font-headline text-xs font-semibold whitespace-nowrap">News & Updates</span>
@@ -23,7 +23,7 @@ const NewsTicker = () => {
               <Link
                 key={item.id}
                 href={item.href}
-                className="mx-6 text-xs text-foreground transition-colors hover:text-primary hover:underline"
+                className="mx-6 text-sm text-foreground transition-colors hover:text-primary hover:underline"
               >
                 {item.text}
               </Link>
@@ -33,7 +33,7 @@ const NewsTicker = () => {
               <Link
                 key={`dup-${item.id}`}
                 href={item.href}
-                className="mx-6 text-xs text-foreground transition-colors hover:text-primary hover:underline"
+                className="mx-6 text-sm text-foreground transition-colors hover:text-primary hover:underline"
                 aria-hidden="true"
               >
                 {item.text}
