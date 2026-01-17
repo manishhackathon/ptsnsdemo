@@ -3,13 +3,13 @@
     {
       "id": "header-logo-center",
       "description": "University of Shahdol",
-      "imageUrl": "https://images.unsplash.com/photo-1576495199011-eb94736d05d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY4NTI0NDQwfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1590231204765-12b10cedb4fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx1bml2ZXJzaXR5JTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY4NjM1NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "university building"
     },
     {
       "id": "slider-1",
       "description": "Students celebrating Holi festival with colorful powders",
-      "imageUrl": "https://images.unsplash.com/photo-1616425119911-7c4c353597b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxob2xpJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzE5OTI0NTYxfDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519802772250-a52a9af0eacb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxob2xpJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY4NTkzNDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "holi festival",
       "title": "Vibrant Campus Life",
       "subtitle": "Experience a rich tapestry of culture and celebration."
@@ -17,7 +17,7 @@
     {
       "id": "slider-2",
       "description": "Vibrant and colorful building architecture in India",
-      "imageUrl": "https://images.unsplash.com/photo-1599837562846-5a5223c6f663?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvcmZ1bCUyMGJ1aWxkaW5nJTIwSW5kaWF8ZW58MHx8fHwxNzE5OTI0NjM4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1648917861061-5329e39b118b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2xvcmZ1bCUyMGJ1aWxkaW5nfGVufDB8fHx8MTc2ODYzNTU5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "colorful building",
       "title": "Inspiring Architecture",
       "subtitle": "A blend of tradition and modernity in our campus design."
@@ -25,7 +25,7 @@
     {
       "id": "slider-3",
       "description": "Excited students celebrating under a shower of confetti",
-      "imageUrl": "https://images.unsplash.com/photo-1541873676-a18131494184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb2xvcmZ1bCUyMGNlbGVicmF0aW9ufGVufDB8fHx8fDE3E5OTI0Njg5fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1756694915692-acd9b4ad9291?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzdHVkZW50cyUyMGNlbGVicmF0aW5nfGVufDB8fHx8MTc2ODYzNTU5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "students celebrating",
       "title": "Celebrate Your Success",
       "subtitle": "Join a community that celebrates every achievement."
@@ -33,7 +33,7 @@
     {
       "id": "slider-4",
       "description": "A bustling and vibrant university campus courtyard",
-      "imageUrl": "https://images.unsplash.com/photo-1532649539518-8833550e821e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2aWJyYW50JTIwY2FtcHVzfGVufDB8fHx8fDE3E5OTI0NzU5fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1686055259863-f53805d61427?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aWJyYW50JTIwY2FtcHVzfGVufDB8fHx8MTc2ODYzNTU5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "vibrant campus",
       "title": "A Hub of Activity",
       "subtitle": "Our campus is always buzzing with energy and new ideas."
@@ -41,7 +41,7 @@
     {
       "id": "about-us-image",
       "description": "Architectural detail of a university building",
-      "imageUrl": "https://images.unsplash.com/photo-1576495199011-eb94736d05d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY4NTI0NDQwfDA&ixlib.rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1608832633049-6d6e51f8dc99?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx1bml2ZXJzaXR5JTIwYnVpbGRpbmd8ZW58MHx8fHwxNzY4NjM1NTkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "university building"
     }
   ]
