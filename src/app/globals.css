@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @layer base {
   :root {
-    --background: 208 65% 71%;
+    --background: 200 100% 50%;
     --foreground: 240 10% 3.9%;
 
     --card: 0 0% 100%;
@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .dark {
-    --background: 300 40% 9%;
+    --background: 200 100% 60%;
     --foreground: 0 0% 98%;
     
     --card: 240 10% 3.9%;
