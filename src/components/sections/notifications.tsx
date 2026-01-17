@@ -56,9 +56,9 @@ const NotificationsSection = () => {
         {notificationCards.map((card) => (
           <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden rounded-lg border border-primary bg-card shadow-lg shadow-primary/20 transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/20">
             <CardHeader className="flex flex-row items-center p-4">
-              <div className="flex items-center gap-3">
-                <div className={`flex-shrink-0 rounded-md p-1.5 ${card.bgClass}`}>
-                  <card.icon className="h-5 w-5 text-white" strokeWidth={2.5} />
+              <div className="flex items-center gap-2">
+                <div className={`flex-shrink-0 rounded-md p-1 ${card.bgClass}`}>
+                  <card.icon className="h-4 w-4 text-white" strokeWidth={2.5} />
                 </div>
                 <Link
                   href={card.href}
@@ -90,7 +90,7 @@ const NotificationsSection = () => {
             <CardFooter className="justify-end p-2">
               <Link
                 href={card.href}
-                className="text-sm font-medium text-primary hover:underline"
+                className="text-sm font-medium text-primary underline hover:text-primary/90"
               >
                 View All
               </Link>
