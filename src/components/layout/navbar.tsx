@@ -90,7 +90,7 @@ const NavMenu = () => (
           <DropdownMenuTrigger asChild>
             <Button
               variant="ghost"
-              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
+              className="flex items-center gap-1.5 px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
             >
               <link.icon className="h-4 w-4" />
               <span className="whitespace-nowrap">{link.label}</span> <ChevronDown className="h-4 w-4" />
@@ -108,7 +108,7 @@ const NavMenu = () => (
         <Link
           key={link.label}
           href={link.href || '#'}
-          className="flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-[#BA55D3] transition-colors hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]"
+          className="flex items-center gap-1.5 rounded-md px-3 py-2 text-sm font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
         >
           <link.icon className="h-4 w-4" />
           <span className="whitespace-nowrap">{link.label}</span>
@@ -122,10 +122,10 @@ const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
-    <div className="rounded-md border border-[#BA55D3] xl:hidden">
+    <div className="rounded-md border border-primary/50 xl:hidden">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <Button variant="ghost" size="icon" className="text-[#BA55D3] hover:bg-[#BA55D3]/10 hover:text-[#BA55D3]">
+          <Button variant="ghost" size="icon" className="text-primary hover:bg-primary/10 hover:text-primary">
             <Menu className="h-6 w-6" />
             <span className="sr-only">Open navigation menu</span>
           </Button>
@@ -133,7 +133,7 @@ const MobileNav = () => {
         <SheetContent side="right" className="w-[280px] bg-card p-0">
           <SheetHeader className="p-6 text-left border-b">
             <SheetTitle>
-              <Link href="/" onClick={() => setIsOpen(false)} className="font-headline text-lg font-bold text-[#BA55D3]">
+              <Link href="/" onClick={() => setIsOpen(false)} className="font-headline text-lg font-bold text-primary">
                 P.S.N.S. Vishwavidyalaya
               </Link>
             </SheetTitle>
@@ -145,14 +145,14 @@ const MobileNav = () => {
                   return (
                     <div key={link.label} className="flex flex-col space-y-2">
                        <p className="font-semibold text-foreground/80 flex items-center gap-2">
-                        <link.icon className="h-4 w-4 text-[#BA55D3]" />
+                        <link.icon className="h-4 w-4 text-primary" />
                         {link.label}
                       </p>
                       {link.subLinks.map(sublink => (
                          <Link
                           key={sublink.label}
                           href={sublink.href}
-                          className="pl-8 text-base font-medium text-foreground/70 transition-colors hover:text-[#BA55D3]"
+                          className="pl-8 text-base font-medium text-foreground/70 transition-colors hover:text-primary"
                           onClick={() => setIsOpen(false)}
                         >
                           {sublink.label}
@@ -165,10 +165,10 @@ const MobileNav = () => {
                    <Link
                     key={link.label}
                     href={link.href!}
-                    className="flex items-center gap-2 text-base font-medium text-foreground/80 transition-colors hover:text-[#BA55D3]"
+                    className="flex items-center gap-2 text-base font-medium text-foreground/80 transition-colors hover:text-primary"
                     onClick={() => setIsOpen(false)}
                   >
-                    <link.icon className="h-4 w-4 text-[#BA55D3]" />
+                    <link.icon className="h-4 w-4 text-primary" />
                     {link.label}
                   </Link>
                 )
@@ -185,7 +185,7 @@ const NavBar = () => {
     return (
         <div className="sticky top-0 z-40 w-full bg-muted">
             <div className="container mx-auto flex h-16 items-center justify-end px-4 xl:justify-center">
-                <div className="hidden xl:flex items-center h-14 px-4 bg-white rounded-full border border-[#BA55D3]/20 shadow-lg">
+                <div className="hidden xl:flex items-center h-14 px-4 bg-white rounded-lg border border-border shadow-lg">
                     <NavMenu />
                 </div>
                 <MobileNav />
