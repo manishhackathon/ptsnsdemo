@@ -26,8 +26,8 @@ const HeroSlider = () => {
 
   return (
     <section className="w-full">
-      <div className="rounded-2xl p-2 shadow-lg">
-        <Card className="overflow-hidden rounded-xl border-2 border-primary">
+      <div className="rounded-2xl p-1 shadow-md">
+        <Card className="overflow-hidden rounded-xl border border-primary/50">
           <Carousel
             plugins={[plugin.current]}
             className="w-full"
@@ -41,7 +41,7 @@ const HeroSlider = () => {
             <CarouselContent className="-ml-[3px]">
               {sliderImages.map((image, index) => (
                 <CarouselItem key={image.id} className="pl-[3px] md:basis-1/2">
-                  <div className="relative aspect-[2/1] overflow-hidden">
+                  <div className="relative aspect-[2/1] overflow-hidden rounded-xl">
                     <Image
                       src={image.imageUrl}
                       alt={image.description}
