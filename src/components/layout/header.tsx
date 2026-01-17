@@ -9,14 +9,14 @@ import { MobileNav } from './navbar';
 
 const Header = () => {
   return (
-    <header className="sticky xl:relative top-0 z-50 w-full bg-muted/50 backdrop-blur-sm xl:min-h-[160px] xl:bg-transparent xl:backdrop-blur-none">
+    <header className="sticky top-0 z-50 w-full bg-muted/50 backdrop-blur-sm xl:relative xl:bg-transparent xl:backdrop-blur-none">
       {/* Hamburger for Tablet View (positioned relative to header) */}
       <div className="absolute right-4 top-1/2 z-[60] hidden -translate-y-1/2 md:block xl:hidden">
         <MobileNav />
       </div>
 
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
-        <div className="inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl">
+        <div className="inline-block rounded-2xl border border-primary/50 bg-white px-4 py-2 shadow-xl shadow-primary/20">
           {/* Desktop Header */}
           <div className="hidden xl:block">
             <div className="flex items-center justify-center gap-6">
@@ -62,9 +62,11 @@ const Header = () => {
 
           {/* Mobile/Tablet Header */}
           <div className="xl:hidden">
-            <div className="relative flex w-full items-center justify-center py-2 text-left">
+            <div className="relative grid w-full grid-cols-[1fr_auto_1fr] items-center gap-4 py-2 text-left md:grid-cols-1 md:text-center">
+              {/* Spacer */}
+              <div className="md:hidden" />
               {/* Logo and Name */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center justify-center gap-3">
                 <Link href="/">
                   <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14">
                     <Image
@@ -75,15 +77,15 @@ const Header = () => {
                     />
                   </div>
                 </Link>
-                <Link href="/" className="pr-10 sm:pr-0 md:pr-0">
-                  <h1 className="font-headline text-sm font-bold tracking-tight text-primary sm:text-base sm:whitespace-nowrap">
+                <Link href="/">
+                  <h1 className="font-headline text-sm font-bold tracking-tight text-primary sm:text-base md:whitespace-nowrap">
                     Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
                   </h1>
                 </Link>
               </div>
 
               {/* Hamburger Menu for Mobile View (hidden on md and up) */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 md:hidden">
+              <div className="justify-self-end md:hidden">
                 <MobileNav />
               </div>
             </div>

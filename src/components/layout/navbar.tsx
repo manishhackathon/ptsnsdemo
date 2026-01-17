@@ -185,7 +185,7 @@ const NavBar = () => {
     return (
         <div className="sticky top-0 z-40 hidden w-full bg-muted py-1 xl:flex">
             <div className="flex h-14 w-full items-center justify-center px-4">
-                <div className="flex h-full w-full items-center justify-center rounded-lg border border-primary bg-white px-2 shadow-lg">
+                <div className="flex h-full w-full items-center justify-center rounded-lg border border-primary bg-white px-2 shadow-lg shadow-primary/20">
                     <NavMenu />
                 </div>
             </div>
