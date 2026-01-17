@@ -8,7 +8,7 @@ import { Input } from '@/components/ui/input';
 
 const Header = () => {
   return (
-    <header className="relative w-full min-h-[180px] overflow-hidden bg-muted/50">
+    <header className="relative w-full min-h-[160px] overflow-hidden bg-muted/50">
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
           <div className="hidden shrink-0 lg:block">
@@ -71,7 +71,7 @@ const Header = () => {
             />
           </div>
         </div>
-        <div className="mt-3 flex w-full justify-end px-2 sm:mt-4">
+        <div className="mt-2 flex w-full justify-end px-2 sm:mt-3">
           <div className="flex w-full max-w-lg items-center gap-2 lg:max-w-2xl">
             <div className="relative flex-grow">
               <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
