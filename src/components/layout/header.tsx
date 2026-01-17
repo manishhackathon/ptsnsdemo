@@ -27,7 +27,7 @@ const Header = () => {
                   />
                 </div>
               </Link>
-              <div className="text-center">
+              <div className="text-center sm:pr-12 xl:pr-0">
                 <Link href="/">
                   <h1 className="font-headline text-base font-bold tracking-tight text-primary sm:text-lg md:text-xl lg:text-3xl">
                     Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
