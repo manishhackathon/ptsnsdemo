@@ -28,7 +28,7 @@ const Header = () => {
                 </Link>
                 <div className="text-center">
                   <Link href="/">
-                    <h1 className="font-headline text-3xl font-bold tracking-tight text-primary">
+                    <h1 className="font-headline text-2xl font-bold tracking-tight text-primary">
                       Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
                     </h1>
                     <p className="font-hindi text-2xl font-bold text-primary/90">
@@ -58,8 +58,12 @@ const Header = () => {
 
             {/* Mobile/Tablet Header */}
             <div className="xl:hidden">
-              <div className="flex items-center justify-between gap-3 text-left sm:relative sm:justify-center sm:gap-4 sm:text-center">
-                <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex w-full items-center justify-between gap-3 text-left sm:grid sm:grid-cols-3 sm:items-center sm:gap-4">
+                {/* Spacer for tablet view */}
+                <div className="hidden sm:block"></div>
+
+                {/* Logo and Name */}
+                <div className="flex items-center gap-3 sm:col-start-2 sm:justify-center sm:gap-4">
                   <Link href="/">
                     <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full sm:h-14 sm:w-14">
                       <Image
@@ -76,7 +80,9 @@ const Header = () => {
                     </h1>
                   </Link>
                 </div>
-                <div className="sm:absolute sm:right-0">
+                
+                {/* Hamburger Menu */}
+                <div className="sm:col-start-3 sm:justify-self-end">
                   <MobileNav />
                 </div>
               </div>
@@ -100,7 +106,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="hidden w-full justify-end px-2 sm:mt-3 xl:flex">
+        <div className="mt-3 hidden w-full justify-end px-2 sm:mt-3 xl:flex">
           <div className="flex w-full max-w-sm items-center gap-2 lg:max-w-md">
             <div className="relative flex-grow">
               <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
