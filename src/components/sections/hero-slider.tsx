@@ -38,7 +38,7 @@ const HeroSlider = () => {
         <CarouselContent>
           {sliderImages.map((image) => (
             <CarouselItem key={image.id}>
-              <Card className="overflow-hidden border-none p-2 shadow-2xl shadow-primary/20 bg-gradient-to-br from-pink-500 to-blue-500">
+              <Card className="overflow-hidden border-none p-2 shadow-2xl shadow-primary/20 bg-primary">
                 <CardContent className="relative aspect-[2/1] overflow-hidden rounded-md p-0 md:aspect-[4/1]">
                   <Image
                     src={image.imageUrl}
