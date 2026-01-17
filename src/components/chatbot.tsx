@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Bot, X, Send } from 'lucide-react';
+import { Bot, Send, ChevronUp, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -18,6 +18,7 @@ const Chatbot = () => {
       >
         <Bot className="h-6 w-6" />
         <span className="font-medium">Chat With Us</span>
+        <ChevronUp className="h-5 w-5" />
       </Button>
     );
   }
@@ -27,8 +28,8 @@ const Chatbot = () => {
       <CardHeader className="flex flex-row items-center justify-between rounded-t-2xl bg-primary p-4 text-primary-foreground">
         <CardTitle className="font-headline text-lg">Chat with us</CardTitle>
         <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} className="h-8 w-8 hover:bg-primary/80">
-          <X className="h-5 w-5" />
-          <span className="sr-only">Close chat</span>
+          <ChevronDown className="h-5 w-5" />
+          <span className="sr-only">Collapse chat</span>
         </Button>
       </CardHeader>
       <CardContent className="h-80 overflow-y-auto p-4">
