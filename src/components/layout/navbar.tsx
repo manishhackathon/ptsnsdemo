@@ -92,7 +92,7 @@ const NavMenu = () => (
               variant="ghost"
               className="flex items-center gap-1.5 px-1 py-2 text-base font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
             >
-              <link.icon className="h-4 w-4" />
+              <link.icon className="h-4 w-4 text-red-800" />
               <span className="whitespace-nowrap">{link.label}</span> <ChevronDown className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>
@@ -110,7 +110,7 @@ const NavMenu = () => (
           href={link.href || '#'}
           className="flex items-center gap-1.5 rounded-md px-1 py-2 text-base font-medium text-primary transition-colors hover:bg-primary/10 hover:text-primary"
         >
-          <link.icon className="h-4 w-4" />
+          <link.icon className="h-4 w-4 text-red-800" />
           <span className="whitespace-nowrap">{link.label}</span>
         </Link>
       )
@@ -145,7 +145,7 @@ const MobileNav = () => {
                   return (
                     <div key={link.label} className="flex flex-col space-y-2">
                        <p className="font-semibold text-foreground/80 flex items-center gap-2">
-                        <link.icon className="h-4 w-4 text-primary" />
+                        <link.icon className="h-4 w-4 text-red-800" />
                         {link.label}
                       </p>
                       {link.subLinks.map(sublink => (
@@ -168,7 +168,7 @@ const MobileNav = () => {
                     className="flex items-center gap-2 text-base font-medium text-foreground/80 transition-colors hover:text-primary"
                     onClick={() => setIsOpen(false)}
                   >
-                    <link.icon className="h-4 w-4 text-primary" />
+                    <link.icon className="h-4 w-4 text-red-800" />
                     {link.label}
                   </Link>
                 )
