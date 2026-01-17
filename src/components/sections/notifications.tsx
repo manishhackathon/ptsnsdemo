@@ -73,9 +73,9 @@ const NotificationsSection = () => {
                     <div className="animate-marquee-up group-hover:[animation-play-state:paused]">
                         {[...card.notices, ...card.notices].map((notice, index) => {
                              return (
-                               <Link href={notice.href} key={`${notice.id}-${index}`} className="mb-4 block rounded-md p-2 outline-none transition-colors hover:bg-accent/10 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
+                               <Link href={notice.href} key={`${notice.id}-${index}`} className="mb-3 block rounded-lg bg-muted p-3 outline-none transition-colors hover:bg-muted/90 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2">
                                   <p className="whitespace-normal text-sm font-medium text-foreground/90">{notice.text}</p>
-                                  <p className="mt-1 text-xs text-muted-foreground">
+                                  <p className="mt-1.5 text-xs font-semibold text-primary">
                                     {format(parseISO(notice.date), 'PPP')}
                                   </p>
                               </Link>
