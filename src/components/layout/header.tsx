@@ -78,11 +78,11 @@ const Header = () => {
                 <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   placeholder="Search courses, notices, faculty..."
-                  className="h-9 w-full rounded-full border-0 bg-white pl-10 pr-10 text-xs transition-colors focus-visible:outline-none focus-visible:ring-0 sm:h-10"
+                  className="h-8 w-full rounded-full border-0 bg-white pl-10 pr-10 text-xs transition-colors focus-visible:outline-none focus-visible:ring-0 sm:h-9"
                 />
                 <Button
                   size="icon"
-                  className="absolute right-1 top-1/2 h-7 w-7 -translate-y-1/2 rounded-full bg-gradient-to-r from-accent to-primary text-white transition-opacity hover:opacity-90 sm:h-8 sm:w-8"
+                  className="absolute right-1 top-1/2 h-6 w-6 -translate-y-1/2 rounded-full bg-gradient-to-r from-accent to-primary text-white transition-opacity hover:opacity-90 sm:h-7 sm:w-7"
                 >
                   <Search className="h-4 w-4" />
                 </Button>
@@ -91,19 +91,19 @@ const Header = () => {
             <div className="flex shrink-0 items-center gap-1">
               <Button
                 variant="outline"
-                className="h-9 w-9 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
+                className="h-8 w-8 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
               >
                 <span className="text-sm">A-</span>
               </Button>
               <Button
                 variant="outline"
-                className="h-9 w-9 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
+                className="h-8 w-8 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
               >
                 <span className="text-sm">A</span>
               </Button>
               <Button
                 variant="outline"
-                className="h-9 w-9 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
+                className="h-8 w-8 rounded-lg border-primary bg-white p-0 text-primary shadow-lg hover:bg-primary/10"
               >
                 <span className="text-sm">A+</span>
               </Button>
