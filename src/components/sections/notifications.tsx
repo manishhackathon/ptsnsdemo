@@ -9,7 +9,7 @@ const notificationCards = [
     title: 'Student Notifications',
     icon: Bell,
     href: '#',
-    gradientClasses: 'bg-gradient-to-br from-blue-500 to-pink-500',
+    bgClass: 'bg-blue-500',
     notices: [
       { id: 1, text: 'Semester exam timetable for all UG/PG courses has been released.', date: '2024-07-25', href: '#' },
       { id: 2, text: 'Library will remain open 24/7 during the examination period.', date: '2024-07-24', href: '#' },
@@ -23,7 +23,7 @@ const notificationCards = [
     title: 'University Circulars',
     icon: FileText,
     href: '#',
-    gradientClasses: 'bg-gradient-to-br from-pink-300 to-red-500',
+    bgClass: 'bg-pink-500',
     notices: [
       { id: 1, text: 'Circular regarding new academic calendar for 2024-25 session.', date: '2024-07-23', href: '#' },
       { id: 2, text: 'Guidelines for Ph.D. admissions process for the upcoming year.', date: '2024-07-22', href: '#' },
@@ -37,7 +37,7 @@ const notificationCards = [
     title: 'Recruitment',
     icon: Briefcase,
     href: '#',
-    gradientClasses: 'bg-gradient-to-br from-orange-400 to-pink-300',
+    bgClass: 'bg-orange-400',
     notices: [
       { id: 1, text: 'Opening for Assistant Professor in Computer Science department.', date: '2024-07-25', href: '#' },
       { id: 2, text: 'Walk-in interview for the post of Lab Assistant on Aug 2nd.', date: '2024-07-24', href: '#' },
@@ -57,8 +57,8 @@ const NotificationsSection = () => {
           <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden rounded-lg border border-primary shadow-lg shadow-primary/20 transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/20">
             <CardHeader className="p-4">
               <div className="flex items-center gap-4">
-                <div className={`flex-shrink-0 rounded-lg p-3 ${card.gradientClasses}`}>
-                  <card.icon className="h-8 w-8 text-white" />
+                <div className={`flex-shrink-0 rounded-lg p-3 ${card.bgClass}`}>
+                  <card.icon className="h-8 w-8 text-white" strokeWidth={2.5} />
                 </div>
                 <Link href={card.href} className="outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md">
                   <CardTitle className="font-headline text-lg font-semibold text-primary/90 hover:underline">
@@ -67,7 +67,7 @@ const NotificationsSection = () => {
                 </Link>
               </div>
             </CardHeader>
-            <Separator className="bg-primary" />
+            <Separator className="w-full bg-primary" />
             <CardContent className="relative flex-1 overflow-hidden p-4 pt-4">
                 <div className="h-full overflow-hidden">
                     <div className="animate-marquee-up group-hover:[animation-play-state:paused]">
@@ -83,7 +83,7 @@ const NotificationsSection = () => {
                                   <div className="flex h-12 w-12 shrink-0 flex-col items-center justify-center rounded-md bg-primary p-1 leading-none text-primary-foreground">
                                     <span className="text-lg font-bold">{day}</span>
                                     <span className="text-[10px] font-medium">{month}</span>
-                                    <span className="text-[10px] font-medium">'{year}</span>
+                                    <span className="text-xs font-medium">'{year}</span>
                                   </div>
                                   <p className="whitespace-normal pt-1 text-sm font-medium text-foreground/90">{notice.text}</p>
                                 </div>
