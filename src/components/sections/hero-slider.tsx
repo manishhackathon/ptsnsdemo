@@ -1,4 +1,3 @@
-
 'use client';
 
 import * as React from 'react';
@@ -27,7 +26,7 @@ const HeroSlider = () => {
 
   return (
     <section className="w-full">
-      <div className="rounded-2xl p-2 shadow-[0_8px_30px_rgb(0,0,0,0.12)]">
+      <div className="rounded-2xl p-2 shadow-lg">
         <Card className="overflow-hidden rounded-xl border-2 border-primary">
           <Carousel
             plugins={[plugin.current]}
@@ -39,9 +38,9 @@ const HeroSlider = () => {
               align: 'start',
             }}
           >
-            <CarouselContent className="-ml-px">
+            <CarouselContent className="-ml-[3px]">
               {sliderImages.map((image, index) => (
-                <CarouselItem key={image.id} className="pl-px md:basis-1/2">
+                <CarouselItem key={image.id} className="pl-[3px] md:basis-1/2">
                   <div className="relative aspect-[2/1] overflow-hidden">
                     <Image
                       src={image.imageUrl}
