@@ -31,7 +31,7 @@ export default function RootLayout({
             backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/body.png')",
           }}
         />
-        <div className="relative z-10 mx-auto flex min-h-screen max-w-[90%] flex-col border border-accent/50 bg-muted shadow-2xl">
+        <div className="relative z-10 mx-auto flex min-h-screen max-w-[95%] flex-col border border-accent/50 bg-muted shadow-2xl">
           <Header />
           <NewsTicker />
           <NavBar />
