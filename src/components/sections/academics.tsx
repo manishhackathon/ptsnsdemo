@@ -47,7 +47,7 @@ const AcademicsSection = () => {
         {departments.map((dept) => (
           <Card
             key={dept.name}
-            className="group transform-gpu bg-transparent text-left transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10"
+            className="group transform-gpu bg-card text-left transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent/10"
           >
             <CardHeader className="flex-row items-center gap-4">
               <div className="rounded-lg bg-accent/10 p-3">

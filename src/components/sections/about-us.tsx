@@ -8,7 +8,7 @@ const AboutUsSection = () => {
 
   return (
     <section id="about-us" aria-labelledby="about-us-title">
-      <Card className="overflow-hidden border-accent/20 bg-transparent shadow-lg shadow-accent/5">
+      <Card className="overflow-hidden border-accent/20 bg-card shadow-lg shadow-accent/5">
         <div className="grid md:grid-cols-2">
           <div className="p-8 md:p-12">
             <CardHeader className="p-0">
