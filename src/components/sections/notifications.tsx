@@ -54,11 +54,11 @@ const NotificationsSection = () => {
     <section id="notifications" aria-labelledby="notifications-title">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {notificationCards.map((card) => (
-          <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden rounded-lg border border-primary shadow-lg shadow-primary/20 transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/20">
+          <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden rounded-lg border border-primary bg-card shadow-lg shadow-primary/20 transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/20">
             <CardHeader className="p-4">
-              <div className="flex items-center gap-4">
-                <div className={`flex-shrink-0 rounded-lg p-3 ${card.bgClass}`}>
-                  <card.icon className="h-8 w-8 text-white" strokeWidth={2.5} />
+              <div className="flex items-center gap-3">
+                <div className={`flex-shrink-0 rounded-lg p-2 ${card.bgClass}`}>
+                  <card.icon className="h-6 w-6 text-white" strokeWidth={2.5} />
                 </div>
                 <Link href={card.href} className="outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md">
                   <CardTitle className="font-headline text-lg font-semibold text-primary/90 hover:underline">
@@ -67,7 +67,7 @@ const NotificationsSection = () => {
                 </Link>
               </div>
             </CardHeader>
-            <Separator className="bg-primary" />
+            <Separator className="bg-primary/50" />
             <CardContent className="relative flex-1 overflow-hidden p-4 pt-4">
                 <div className="h-full overflow-hidden">
                     <div className="animate-marquee-up group-hover:[animation-play-state:paused]">
