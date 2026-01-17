@@ -13,7 +13,7 @@ const Chatbot = () => {
     return (
       <Button
         onClick={() => setIsOpen(true)}
-        className="fixed bottom-4 right-6 z-50 flex items-center gap-3 rounded-lg bg-gradient-to-r from-primary to-purple-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+        className="fixed bottom-2 right-6 z-50 flex items-center gap-3 rounded-lg bg-gradient-to-r from-primary to-purple-500 px-4 py-3 text-primary-foreground shadow-lg transition-transform hover:scale-105"
         aria-label="Open chatbot"
       >
         <MessagesSquare className="h-7 w-7" strokeWidth={2.25} />
@@ -24,7 +24,7 @@ const Chatbot = () => {
   }
 
   return (
-    <Card className="fixed bottom-4 right-6 z-50 w-80 rounded-2xl shadow-2xl">
+    <Card className="fixed bottom-2 right-6 z-50 w-80 rounded-2xl shadow-2xl">
       <CardHeader className="flex flex-row items-center justify-between rounded-t-2xl bg-primary p-4 text-primary-foreground">
         <div className="flex items-center gap-3">
           <MessagesSquare className="h-7 w-7" strokeWidth={2.25} />
