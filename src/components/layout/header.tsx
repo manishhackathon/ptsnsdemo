@@ -35,7 +35,7 @@ const Header = () => {
               <div className="text-center">
                 <Link href="/">
                   <h1 className="font-headline text-base font-bold tracking-tight text-primary sm:text-lg md:text-xl lg:text-3xl">
-                    Pandit Shambhunath Shukla University, Shahdol
+                    Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
                   </h1>
                   <p className="font-hindi text-sm font-bold text-primary/90 sm:text-base md:text-base">
                     पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
