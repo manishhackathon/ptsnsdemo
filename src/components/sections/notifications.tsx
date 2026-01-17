@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Bell, FileText, Briefcase } from 'lucide-react';
 import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
@@ -55,9 +55,9 @@ const NotificationsSection = () => {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {notificationCards.map((card) => (
           <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden rounded-lg border border-primary bg-card shadow-lg shadow-primary/20 transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/20">
-            <CardHeader className="flex flex-row items-center justify-between p-4">
+            <CardHeader className="flex flex-row items-center p-4">
               <div className="flex items-center gap-3">
-                <div className={`flex-shrink-0 rounded-lg p-2 ${card.bgClass}`}>
+                <div className={`flex-shrink-0 rounded-md p-1.5 ${card.bgClass}`}>
                   <card.icon className="h-5 w-5 text-white" strokeWidth={2.5} />
                 </div>
                 <Link
@@ -69,12 +69,6 @@ const NotificationsSection = () => {
                   </CardTitle>
                 </Link>
               </div>
-              <Link
-                href={card.href}
-                className="whitespace-nowrap text-sm font-medium text-primary hover:underline"
-              >
-                View All
-              </Link>
             </CardHeader>
             <Separator className="bg-primary/50" />
             <CardContent className="relative flex-1 overflow-hidden p-4 pt-4">
@@ -92,6 +86,15 @@ const NotificationsSection = () => {
                     </div>
                 </div>
             </CardContent>
+            <Separator />
+            <CardFooter className="justify-end p-2">
+              <Link
+                href={card.href}
+                className="text-sm font-medium text-primary hover:underline"
+              >
+                View All
+              </Link>
+            </CardFooter>
           </Card>
         ))}
       </div>
