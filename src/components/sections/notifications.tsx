@@ -49,7 +49,7 @@ const NotificationsSection = () => {
     <section id="notifications" aria-labelledby="notifications-title">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {notificationCards.map((card) => (
-          <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-primary/20">
+          <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden rounded-lg border border-primary/30 shadow-xl shadow-primary/20 transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/30">
             <CardHeader className="flex-row items-center gap-4">
               <div className="flex-shrink-0 rounded-lg bg-primary/10 p-3">
                 <card.icon className="h-8 w-8 text-primary" />
