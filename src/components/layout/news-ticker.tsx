@@ -11,7 +11,7 @@ const newsItems = [
 
 const NewsTicker = () => {
   return (
-    <div className="my-1 px-4">
+    <div className="my-1 hidden px-4 xl:block">
       <div className="group flex h-6 w-full items-center overflow-hidden rounded-sm border border-primary bg-white shadow-lg">
         <div className="flex h-full flex-shrink-0 items-center gap-2 border-r border-border bg-gradient-to-r from-primary to-purple-500 px-3 text-primary-foreground">
           <Megaphone className="h-4 w-4" />

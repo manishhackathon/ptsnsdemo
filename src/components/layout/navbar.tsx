@@ -118,7 +118,7 @@ const NavMenu = () => (
   </nav>
 );
 
-const MobileNav = () => {
+export const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   return (
@@ -183,12 +183,11 @@ const MobileNav = () => {
 
 const NavBar = () => {
     return (
-        <div className="sticky top-0 z-40 w-full bg-muted py-1">
-            <div className="flex h-14 w-full items-center justify-end px-4 xl:justify-center">
-                <div className="hidden h-full w-full items-center justify-center rounded-lg border border-primary bg-white px-2 shadow-lg xl:flex">
+        <div className="sticky top-0 z-40 hidden w-full bg-muted py-1 xl:flex">
+            <div className="flex h-14 w-full items-center justify-center px-4">
+                <div className="flex h-full w-full items-center justify-center rounded-lg border border-primary bg-white px-2 shadow-lg">
                     <NavMenu />
                 </div>
-                <MobileNav />
             </div>
         </div>
     );

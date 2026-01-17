@@ -5,13 +5,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
+import { MobileNav } from './navbar';
 
 const Header = () => {
   return (
     <header className="relative w-full min-h-[160px] overflow-hidden bg-muted/50">
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
-          <div className="inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl sm:px-6">
+          <div className="relative inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl sm:px-6">
+            <div className="absolute right-2 top-2 xl:hidden">
+              <MobileNav />
+            </div>
             <div className="flex flex-col items-center justify-center gap-1 sm:flex-row sm:gap-3 lg:gap-6">
               <Link href="/">
                 <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14 lg:h-20 lg:w-20">
@@ -53,7 +57,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="mt-2 flex w-full justify-end px-2 sm:mt-3">
+        <div className="hidden w-full justify-end px-2 sm:mt-3 xl:flex">
           <div className="flex w-full max-w-sm items-center gap-2 lg:max-w-md">
             <div className="relative flex-grow">
               <div className="relative rounded-full border-2 border-primary bg-white shadow-lg">
