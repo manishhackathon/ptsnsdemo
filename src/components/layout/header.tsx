@@ -15,7 +15,7 @@ const Header = () => {
           <div className="inline-block rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl">
             {/* Desktop Header */}
             <div className="hidden xl:block">
-              <div className="flex flex-col items-center justify-center gap-6 text-center">
+              <div className="flex items-center justify-center gap-6">
                 <Link href="/">
                   <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full">
                     <Image
@@ -26,7 +26,7 @@ const Header = () => {
                     />
                   </div>
                 </Link>
-                <div>
+                <div className="text-left">
                   <Link href="/">
                     <h1 className="font-headline text-3xl font-bold tracking-tight text-primary">
                       Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
