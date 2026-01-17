@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <header className="relative sticky top-0 z-50 w-full bg-muted/50 backdrop-blur-sm xl:min-h-[160px] xl:bg-transparent xl:backdrop-blur-none">
       {/* Hamburger for Tablet View (positioned relative to header) */}
-      <div className="absolute right-4 top-1/2 hidden -translate-y-1/2 md:block xl:hidden">
+      <div className="absolute right-4 top-1/2 z-[60] hidden -translate-y-1/2 md:block xl:hidden">
         <MobileNav />
       </div>
 
