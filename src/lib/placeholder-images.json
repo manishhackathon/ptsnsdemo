@@ -8,35 +8,35 @@
     },
     {
       "id": "slider-1",
-      "description": "A beautiful view of the university campus.",
-      "imageUrl": "https://images.unsplash.com/photo-1577985043696-8bd54d9f093f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dW5pdmVyc2l0eSUyMGNhbXB1c3xlbnwwfHx8fDE3Njg1Njc1ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "university campus",
-      "title": "Welcome to Our University",
-      "subtitle": "A place of learning, innovation, and growth."
+      "description": "A vibrant celebration of Holi with colorful powders.",
+      "imageUrl": "https://images.unsplash.com/photo-1468234847176-28606331216a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxob2xpJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY4NTkzNDcyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "holi festival",
+      "title": "Festival of Colors",
+      "subtitle": "Celebrating the vibrant spirit of Holi."
     },
     {
       "id": "slider-2",
-      "description": "Students engaged in their studies.",
-      "imageUrl": "https://images.unsplash.com/photo-1565598621680-94ac0c22b148?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdHVkZW50cyUyMGxlYXJuaW5nfGVufDB8fHx8MTc2ODU5MjE1OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "students learning",
-      "title": "Excellence in Education",
-      "subtitle": "Fostering the next generation of leaders."
+      "description": "Beautifully lit diyas during Diwali.",
+      "imageUrl": "https://images.unsplash.com/photo-1572542090858-2b8968a0f4de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaXdhbGklMjBmZXN0aXZhbHxlbnwwfHx8fDE3Njg2NDc0NTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "diwali festival",
+      "title": "Festival of Lights",
+      "subtitle": "Wishing you a bright and prosperous Diwali."
     },
     {
       "id": "slider-3",
-      "description": "The university library, a source of endless knowledge.",
-      "imageUrl": "https://images.unsplash.com/photo-1579370318443-8da816457e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsaWJyYXJ5JTIwYm9va3N8ZW58MHx8fHwxNzY4NTY2MzQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "library books",
-      "title": "A World of Knowledge",
-      "subtitle": "Our comprehensive library and resources are available to all students."
+      "description": "People celebrating Holi with joy and enthusiasm.",
+      "imageUrl": "https://images.unsplash.com/photo-1635247055412-6007edbd9af7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxob2xpJTIwY29sb3JzfGVufDB8fHx8MTc2ODY0NzQ1N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "holi colors",
+      "title": "Joyful Moments of Holi",
+      "subtitle": "Embrace the colors of happiness and unity."
     },
     {
       "id": "slider-4",
-      "description": "Students celebrating their success on graduation day.",
-      "imageUrl": "https://images.unsplash.com/photo-1594750852563-5ed8e0421d40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxncmFkdWF0aW9uJTIwZGF5fGVufDB8fHx8MTc2ODY0NzQxOXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "graduation day",
-      "title": "Your Future Begins Here",
-      "subtitle": "Embark on your journey to success with us."
+      "description": "A stunning display of fireworks for Diwali.",
+      "imageUrl": "https://images.unsplash.com/photo-1636132664098-423d80b80f57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxkaXdhbGklMjBsaWdodHN8ZW58MHx8fHwxNzY4NTQ0Njk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "diwali lights",
+      "title": "A Sky Full of Lights",
+      "subtitle": "The triumph of light over darkness."
     },
     {
       "id": "about-us-image",
