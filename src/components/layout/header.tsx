@@ -28,7 +28,7 @@ const Header = () => {
                   <h1 className="font-headline text-base font-bold tracking-tight text-primary sm:text-lg md:text-xl lg:text-3xl">
                     Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)
                   </h1>
-                  <p className="font-hindi text-xl font-bold text-primary/90 sm:text-lg md:text-xl lg:text-4xl">
+                  <p className="font-hindi text-lg font-bold text-primary/90 sm:text-base md:text-lg lg:text-3xl">
                     पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
                   </p>
                 </Link>
