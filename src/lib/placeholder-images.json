@@ -32,9 +32,9 @@
     },
     {
       "id": "slider-4",
-      "description": "An aerial view of a university campus filled with lush green spaces and colorful autumn trees.",
-      "imageUrl": "https://images.unsplash.com/photo-1472173546845-c3c0a52f8a3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx1bml2ZXJzaXR5JTIwY2FtcHVzfGVufDB8fHx8fDE3MTgwMjc0NzZ8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "campus aerial view colorful",
+      "description": "A stunning aerial shot of a university campus in autumn, with vibrant red and orange trees surrounding modern buildings.",
+      "imageUrl": "https://images.unsplash.com/photo-1562774053-623a991b2979?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx1bml2ZXJzaXR5JTIwY2FtcHVzJTIwY29sb3JmdWwlMjBhZXJpYWx8ZW58MHx8fHwxNzE4MDI4MjU4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "autumn campus aerial",
       "title": "A Beautiful Campus",
       "subtitle": "Find inspiration in our stunning and vibrant surroundings."
     },
