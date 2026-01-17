@@ -12,48 +12,89 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-muted/50 backdrop-blur-sm xl:relative xl:min-h-[160px] xl:bg-transparent xl:backdrop-blur-none">
       <div className="relative z-10 flex flex-col items-center p-2 text-center sm:p-3">
         <div className="flex w-full items-center justify-center gap-4">
-          <div className="relative w-full rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl xl:inline-block xl:w-auto xl:px-6">
-            <div className="absolute right-2 top-1/2 -translate-y-1/2 xl:hidden">
-              <MobileNav />
-            </div>
-            <div className="flex flex-row items-center justify-start gap-3 text-left xl:flex-col xl:justify-center xl:gap-6 xl:text-center">
-              <Link href="/">
-                <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full xl:h-20 xl:w-20">
-                  <Image
-                    src="/university.jpg"
-                    alt="University Logo"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-              </Link>
-              <div className="pr-12 xl:pr-0">
+          <div className="w-full rounded-2xl border border-accent/50 bg-white px-4 py-2 shadow-xl">
+            {/* Desktop Header */}
+            <div className="hidden xl:block">
+              <div className="flex flex-col items-center justify-center gap-6 text-center">
                 <Link href="/">
-                  <h1 className="font-headline text-base font-bold tracking-tight text-primary xl:text-3xl">
-                    Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
-                  </h1>
-                  <p className="hidden font-hindi text-base font-bold text-primary/90 xl:block">
-                    पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
-                  </p>
+                  <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full">
+                    <Image
+                      src="/university.jpg"
+                      alt="University Logo"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                 </Link>
+                <div>
+                  <Link href="/">
+                    <h1 className="font-headline text-3xl font-bold tracking-tight text-primary">
+                      Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
+                    </h1>
+                    <p className="font-hindi text-base font-bold text-primary/90">
+                      पंडित शंभूनाथ शुक्ला विश्‍वविद्यालय, शहडोल (म.प्र.)
+                    </p>
+                  </Link>
+                </div>
+              </div>
+              <div className="mt-4 flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-sm text-foreground/80">
+                <a
+                  href="tel:07652240917"
+                  className="flex items-center gap-1.5 transition-colors hover:text-primary"
+                >
+                  <Phone className="h-4 w-4 text-accent" />
+                  <span>Phone: 07652-240917</span>
+                </a>
+                <div className="h-3 w-px bg-border" />
+                <a
+                  href="mailto:ptsnsuniversity@gmail.com"
+                  className="flex items-center gap-1.5 transition-colors hover:text-primary"
+                >
+                  <Mail className="h-4 w-4 text-accent" />
+                  <span>Email: ptsnsuniversity@gmail.com</span>
+                </a>
               </div>
             </div>
-            <div className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 border-t border-border pt-2 text-[10px] text-foreground/80 sm:text-xs xl:mt-4 xl:gap-x-6 xl:border-t-0 xl:pt-0 xl:text-sm">
-              <a
-                href="tel:07652240917"
-                className="flex items-center gap-1.5 transition-colors hover:text-primary"
-              >
-                <Phone className="h-3 w-3 text-accent xl:h-4 xl:w-4" />
-                <span>Phone: 07652-240917</span>
-              </a>
-              <div className="hidden h-3 w-px bg-border sm:block" />
-              <a
-                href="mailto:ptsnsuniversity@gmail.com"
-                className="flex items-center gap-1.5 transition-colors hover:text-primary"
-              >
-                <Mail className="h-3 w-3 text-accent xl:h-4 xl:w-4" />
-                <span>Email: ptsnsuniversity@gmail.com</span>
-              </a>
+
+            {/* Mobile/Tablet Header */}
+            <div className="xl:hidden">
+              <div className="flex items-center justify-between gap-3 text-left">
+                  <div className="flex items-center gap-3">
+                      <Link href="/">
+                        <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-full">
+                          <Image
+                            src="/university.jpg"
+                            alt="University Logo"
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                      </Link>
+                      <Link href="/">
+                        <h1 className="font-headline text-base font-bold tracking-tight text-primary">
+                          Pandit Shambhunath Shukla Vishwavidyalaya, Shahdol (M.P.)
+                        </h1>
+                      </Link>
+                  </div>
+                  <MobileNav />
+              </div>
+              <div className="mt-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 border-t border-border pt-2 text-[10px] text-foreground/80 sm:text-xs">
+                <a
+                  href="tel:07652240917"
+                  className="flex items-center gap-1.5 transition-colors hover:text-primary"
+                >
+                  <Phone className="h-3 w-3 text-accent" />
+                  <span>Phone: 07652-240917</span>
+                </a>
+                <div className="hidden h-3 w-px bg-border sm:block" />
+                <a
+                  href="mailto:ptsnsuniversity@gmail.com"
+                  className="flex items-center gap-1.5 transition-colors hover:text-primary"
+                >
+                  <Mail className="h-3 w-3 text-accent" />
+                  <span>Email: ptsnsuniversity@gmail.com</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
