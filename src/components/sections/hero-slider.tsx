@@ -26,7 +26,7 @@ const HeroSlider = () => {
 
   return (
     <section className="w-full">
-      <Card className="overflow-hidden rounded-2xl border-2 border-primary p-1 shadow-lg shadow-primary/20">
+      <Card className="overflow-hidden rounded-2xl border-2 border-primary p-1 shadow-lg shadow-primary/10">
         <Carousel
           plugins={[plugin.current]}
           className="w-full overflow-hidden rounded-xl"
@@ -52,10 +52,10 @@ const HeroSlider = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <div className="absolute bottom-0 left-0 p-4 md:p-6">
                      <h2 className="font-headline text-lg font-bold text-white sm:text-xl md:text-2xl">
-                       Excellence in Education, Rooted in Heritage
+                       {image.title || 'Excellence in Education, Rooted in Heritage'}
                      </h2>
                      <p className="mt-1 max-w-xl text-xs text-white/90 md:text-sm">
-                       Discover a vibrant community dedicated to learning and innovation.
+                       {image.subtitle || 'Discover a vibrant community dedicated to learning and innovation.'}
                      </p>
                   </div>
                 </div>
