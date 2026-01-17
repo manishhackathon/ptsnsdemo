@@ -18,7 +18,7 @@ const ContactSection = () => {
       </div>
 
       <div className="mt-12 grid grid-cols-1 gap-12 md:grid-cols-2">
-        <Card className="bg-card">
+        <Card className="bg-card border border-primary shadow-lg shadow-primary/20">
           <CardHeader>
             <CardTitle className="font-headline text-xl">Contact Information</CardTitle>
             <CardDescription>Our official contact channels.</CardDescription>
@@ -53,7 +53,7 @@ const ContactSection = () => {
             </div>
           </CardContent>
         </Card>
-        <Card className="bg-card">
+        <Card className="bg-card border border-primary shadow-lg shadow-primary/20">
           <CardHeader>
             <CardTitle className="font-headline text-xl">Send us a Message</CardTitle>
             <CardDescription>Fill out the form below.</CardDescription>

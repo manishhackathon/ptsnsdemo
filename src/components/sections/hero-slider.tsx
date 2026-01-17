@@ -26,8 +26,8 @@ const HeroSlider = () => {
 
   return (
     <section className="w-full">
-      <div className="rounded-2xl p-1 shadow-xl shadow-primary/20">
-        <Card className="overflow-hidden rounded-xl border border-primary/50">
+      <div className="rounded-2xl p-1 shadow-lg shadow-primary/20">
+        <Card className="overflow-hidden rounded-xl border border-primary">
           <Carousel
             plugins={[plugin.current]}
             className="w-full"
