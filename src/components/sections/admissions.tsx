@@ -10,7 +10,7 @@ const AdmissionsSection = () => {
             Admissions Open for {new Date().getFullYear()}
           </h2>
           <p className="mx-auto mt-2 max-w-xl text-primary-foreground/80">
-            Begin your journey with University of Shahdol. Discover our programs and become part of a legacy of excellence.
+            Begin your journey with Pandit Shambhunath Shukla University, Shahdol. Discover our programs and become part of a legacy of excellence.
           </p>
           <Button
             variant="secondary"

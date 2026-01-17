@@ -13,7 +13,7 @@ const AboutUsSection = () => {
           <div className="p-8 md:p-12">
             <CardHeader className="p-0">
               <h2 id="about-us-title" className="font-headline text-3xl font-bold text-primary">
-                About University of Shahdol
+                About Pandit Shambhunath Shukla University, Shahdol
               </h2>
             </CardHeader>
             <CardContent className="mt-4 p-0">
@@ -22,7 +22,7 @@ const AboutUsSection = () => {
                   Nestled in the heartland of India, our university is a beacon of knowledge, blending rich cultural heritage with modern academic excellence. We are committed to fostering an environment of intellectual curiosity and innovation.
                 </p>
                 <p>
-                  Established to honor the local communities, University of Shahdol offers a unique educational experience. Our curriculum is designed to empower students with skills for the future while instilling a deep respect for our history and traditions.
+                  Established to honor the local communities, Pandit Shambhunath Shukla University, Shahdol offers a unique educational experience. Our curriculum is designed to empower students with skills for the future while instilling a deep respect for our history and traditions.
                 </p>
               </div>
               <Button variant="outline" className="mt-6 border-accent text-accent hover:bg-accent/10 hover:text-accent">Learn More</Button>

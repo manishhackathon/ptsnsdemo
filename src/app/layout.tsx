@@ -8,7 +8,7 @@ import NewsTicker from '@/components/layout/news-ticker';
 import Chatbot from '@/components/chatbot';
 
 export const metadata: Metadata = {
-  title: 'Pandit Shambhu Nath Shukla Vishwavidyalaya, Shahdol (M.P.)',
+  title: 'Pandit Shambhunath Shukla University, Shahdol',
   description: 'A premier institution of higher learning and research.',
 };
 

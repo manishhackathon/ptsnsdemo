@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
           <div className="text-center md:text-left">
-            <h3 className="font-headline text-lg font-semibold">University of Shahdol</h3>
-            <p className="mt-1 text-sm opacity-80">© {currentYear} University of Shahdol. All rights reserved.</p>
+            <h3 className="font-headline text-lg font-semibold">Pandit Shambhunath Shukla University, Shahdol</h3>
+            <p className="mt-1 text-sm opacity-80">© {currentYear} Pandit Shambhunath Shukla University, Shahdol. All rights reserved.</p>
           </div>
           <div className="flex flex-col items-center gap-4">
             <div className="text-center text-sm opacity-80">
