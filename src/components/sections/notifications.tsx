@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Bell, FileText, Briefcase } from 'lucide-react';
 import Link from 'next/link';
+import { Separator } from '@/components/ui/separator';
 
 const notificationCards = [
   {
@@ -53,17 +54,20 @@ const NotificationsSection = () => {
       <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
         {notificationCards.map((card) => (
           <Card key={card.title} className="group flex h-[400px] flex-col overflow-hidden rounded-lg border border-primary/30 shadow-xl shadow-primary/20 transition-shadow duration-300 hover:shadow-2xl hover:shadow-primary/30">
-            <CardHeader className="flex-row items-center gap-4">
-              <div className={`flex-shrink-0 rounded-lg p-3 ${card.gradientClasses}`}>
-                <card.icon className="h-8 w-8 text-white" />
+            <CardHeader className="p-4">
+              <div className="flex items-center gap-4">
+                <div className={`flex-shrink-0 rounded-lg p-3 ${card.gradientClasses}`}>
+                  <card.icon className="h-8 w-8 text-white" />
+                </div>
+                <Link href={card.href} className="outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md">
+                  <CardTitle className="font-headline text-lg font-semibold text-primary/90 hover:underline">
+                    {card.title}
+                  </CardTitle>
+                </Link>
               </div>
-              <Link href={card.href} className="outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md">
-                <CardTitle className="font-headline text-lg font-semibold text-primary/90 hover:underline">
-                  {card.title}
-                </CardTitle>
-              </Link>
             </CardHeader>
-            <CardContent className="relative flex-1 overflow-hidden pt-0">
+            <Separator className="mx-4 -mt-2 bg-primary" />
+            <CardContent className="relative flex-1 overflow-hidden p-4 pt-4">
                 <div className="h-full overflow-hidden">
                     <div className="animate-marquee-up group-hover:[animation-play-state:paused]">
                         {[...card.notices, ...card.notices].map((notice, index) => (
